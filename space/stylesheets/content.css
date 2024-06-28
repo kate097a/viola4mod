@@ -1,0 +1,870 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    cursor: none;
+    width: 100%;
+}
+
+.button {
+  font-family: "Inter regular";
+}
+
+.element::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* ---курсор--- */
+.cursorDot {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 100%;
+  transition: all 400;
+  background-color: rgb(255, 255, 255);
+  background-size: 100%;
+}
+
+.cursorDot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate( -50%, -50%);
+  pointer-events: none;
+  z-index: 198765432;
+  mix-blend-mode: difference;
+}
+
+.arrow {
+    width: 30vw;
+}
+/* ---курсор--- */
+
+/* ---блок меню--- */
+.menuTip {
+    color: rgb(0, 0, 0);
+    font-size: 1.7vw;
+}
+
+.menu {
+  width: 95%;
+  display: flex;
+  margin: 2vw auto;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 2.1%;
+  z-index: 888;
+}
+/* ---блок меню--- */
+
+/* ---кружки--- */
+.circ {
+  width: 30vw;
+  position: absolute;
+}
+
+#circ1 {
+  width: 40vw;
+  top: -9vw;
+  left: 3vw;
+  position: absolute;
+  animation: moveDiagonal1 5s infinite alternate;
+}
+
+@keyframes moveDiagonal1 {
+  0% {
+    top: -9vw;
+    left: 3vw;
+  }
+  25% {
+    top: -2vw;
+    left: 8vw;
+  }
+  50% {
+    top: 5vw;
+    left: 20vw;
+  }
+  75% {
+    top: 9vw;
+    left: 4vw;
+  }
+  100% {
+    top: 15vw;
+    left: 8vw;
+  }
+}
+
+#circ2 {
+  width: 35vw;
+  top: 5vw;
+  left: 60vw;
+  animation: moveDiagonal3 9s infinite alternate;
+}
+
+@keyframes moveDiagonal3 {
+  0% {
+    top: 5vw;
+    left: 60vw;
+  }
+  25% {
+    top: 1vw;
+    left: 70vw;
+  }
+  50% {
+    top: -4vw;
+    left: 70vw;
+  }
+  75% {
+    top: 9vw;
+    left: 55vw;
+  }
+  100% {
+    top: 15vw;
+    left: 60vw;
+  }
+}
+/* ---кружки--- */
+
+/* ---пространство--- */
+.runText {
+  display: flex;
+  margin-top: 22.5vw;
+  margin-left: 5vw;
+  font-size: 6vw;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  letter-spacing: 3vw;
+}
+/* ---пространство--- */
+
+/* ---глиф--- */
+.glif {
+  width: 100vw;
+  margin-top: 6vw;
+  position: absolute;
+}
+
+#glif1 {
+  width: 43vw;
+  top: 15vw;
+  left: 19vw;
+  position: absolute;
+  mix-blend-mode: difference;
+  opacity: 0;
+  animation: flicker 2s infinite, shake 0.1s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px)
+  }
+}
+/* ---глиф--- */
+
+/* ---линии--- */
+.line {
+  width: 100%;
+}
+
+#line1 {
+  top: 13vw;
+  position: absolute;
+  animation: moveUpAndDown 1s infinite ease-in-out; 
+}
+
+@keyframes moveUpAndDown {
+  0% { top: 13vw; }
+  50% { top: 18vw; }
+  100% { top: 13vw; }
+}
+
+#line2 {
+  top: 34vw;
+  position: absolute;
+}
+
+#line3 {
+  top: 44vw;
+  position: absolute;
+} 
+
+#line4 {
+  top: 45vw;
+  position: absolute;
+  animation: moveUpAndDown4 2s infinite ease-in-out; 
+} 
+
+@keyframes moveUpAndDown4 {
+  0% { top: 45vw; }
+  50% { top: 49vw; }
+  100% { top: 45vw; }
+}
+/* ---линии--- */
+
+/* ---план--- */
+.title {
+  width: 97%;
+  display: flex;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin: 5vw  auto 0 ;
+  margin-left: 4vw;
+  margin-top: 29.5vw;
+  font-size: 3vw;
+  letter-spacing: 2vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#ar1 {
+  width: 55%;
+  margin-left: 24vw;
+}
+/* ---план--- */
+
+/* ---здание/глифы--- */
+.katya {
+  position: relative;
+}
+
+.caps {
+  width: 100vw;
+  top: 3vw;
+  position: absolute;
+}
+
+.caps1 {
+  width: 60vw;
+  top: 28vw;
+  left: 40vw;
+  position: absolute;
+  mix-blend-mode: difference;
+  opacity: 0;
+  animation: flicker 1.2s infinite, shake 0.1s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px)
+  }
+}
+
+.caps2 {
+  width: 5vw;
+  top: 117vw;
+  left: 9vw;
+  position: absolute;
+  mix-blend-mode: difference;
+  opacity: 0;
+  animation: flicker 1s infinite, shake 0.1s infinite;
+}
+
+.caps3 {
+  width: 15vw;
+  top: 125vw;
+  left: 35vw;
+  position: absolute;
+  mix-blend-mode: difference;
+  opacity: 0;
+  animation: flicker 0.9s infinite, shake 0.1s infinite;
+}
+/* ---здание/глифы--- */
+
+/* ---зоны--- */
+.zone {
+  margin-top: -5vw;
+  margin-left: 3.5vw;
+}
+
+.zone {
+  position: absolute;
+  width: 55vw;
+}
+
+.zonesss {
+  position: relative;
+  height: 43vw;
+  margin-bottom: 5vw;
+}
+
+#zone1 {
+  width: 40vw;
+  left: 4vw;
+  top: 3vw;
+} 
+
+#zone2 {
+  left: 17vw;
+  top: 13vw
+}
+
+#zone3 {
+  width: 45vw;
+  left: 49vw;
+  top: 5vw
+} 
+/* ---зоны--- */
+
+/* ---текст--- */
+.title2 {
+  width: 50%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: 57vw;
+  margin-left: 7vw;
+  font-size: 1.4vw;
+  letter-spacing: 1vw;
+}
+
+#circ33 {
+  width: 40vw;
+  top: 105vw;
+  left: 50vw;
+  position: absolute;
+  animation: movee 4s infinite ease-in-out; 
+} 
+
+@keyframes movee {
+  0% { top: 105vw; }
+  50% { top: 120vw; }
+  100% { top: 105vw; }
+}
+
+#circ333 {
+  width: 40vw;
+  top: 160vw;
+  left: -2vw;
+  position: absolute;
+  animation: move 4s infinite ease-in-out; 
+} 
+
+@keyframes move {
+  0% { top: 160vw; }
+  50% { top: 180vw; }
+  100% { top: 160vw; }
+}
+
+.title3 {
+  width: 29%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: 8vw;
+  margin-left: 7vw;
+  font-size: 1vw;
+  letter-spacing: 0.6vw;
+}
+
+.title4 {
+  width: 25%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: -6.5vw;
+  margin-left: 56vw;
+  font-size: 1vw;
+  letter-spacing: 0.6vw;
+}
+
+.gl {
+  width: 29%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: 13vw;
+  margin-left: 7vw;
+  font-size: 1vw;
+  letter-spacing: 0.6vw;
+}
+
+.tem {
+  width: 31%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: -9vw;
+  margin-left: 59vw;
+  font-size: 1vw;
+  letter-spacing: 0.6vw;
+}
+/* ---текст--- */
+
+/* ---зоны--- */
+.runTextzn {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  margin-top: 4vw;
+  font-size: 7vw;
+  font-family: inter ExtraBold;
+  color: rgb(0, 0, 0);
+  letter-spacing: 3vw;
+}
+
+.runnnn {
+  white-space: nowrap;
+  width: fit-content;
+  animation: run44 4s infinite linear;
+}
+
+.runText4:hover {
+  animation-play-state: paused;
+}
+      
+@keyframes run44 {
+      0% {
+          transform: translateX(-0vw);
+      }
+      
+      100% {
+          transform: translateX(-114.7vw);
+      }
+    }
+/* ---зоны--- */
+
+/* ---описание зон--- */
+.titleee {
+  width: 96%;
+  display: flex;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin: 5vw  auto 0 ;
+  margin-left: 4vw;
+  margin-top: 4vw;
+  font-size: 3vw;
+  letter-spacing: 2vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#ar222 {
+  width: 55%;
+}
+/* ---описание зон--- */
+
+/* ---строчки--- */
+.text {
+  width: 100vw;
+  overflow: hidden;
+  margin-top: 4vw;
+}
+
+.text2 {
+  display: flex;
+  margin-top: 1vw;
+  font-size: 3vw;
+  font-family: inter regular;
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+  animation: run4 5s infinite linear;
+  letter-spacing: 8vw;
+}
+  
+.text2:hover {
+  animation-play-state: paused;
+}
+      
+@keyframes run4 {
+      0% {
+          transform: translateX(-100vw);
+      }
+      
+      100% {
+          transform: translateX(0vw);
+      }
+    }
+
+.text3 {
+  display: flex;
+  margin-top: 1vw;
+  font-size: 4vw;
+  font-family: inter regular;
+  white-space: nowrap;
+  color: #000000;
+  animation: run5 8s infinite linear;
+  letter-spacing: 10vw;
+}
+      
+.text3:hover {
+  animation-play-state: paused;
+}
+          
+@keyframes run5 {
+0% {
+     transform: translateX(0vw);
+   }
+          
+100% {
+     transform: translateX(-100vw);
+  }
+}
+/* ---строчки--- */
+
+/* ---картинки--- */
+.pi {
+  transition: all 0.4s;
+}
+
+.manPics {
+  margin-top: 5vw;
+  height: 95vw;
+}
+
+#pics1 {
+  width: 48vw;
+  margin-left: 1vw;
+  position: absolute;
+} 
+
+#pics2 {
+  width: 48vw;
+  margin-left: 50.5vw;
+  margin-top: 0vw;
+  position: absolute;
+} 
+
+#pics3 {
+  width: 48vw;
+  margin-left: 50.5vw;
+  margin-top: 15.5vw;
+  position: absolute;
+} 
+
+#pics4 {
+  width: 48vw;
+  margin-left: 1vw;
+  margin-top: 32vw;
+} 
+
+#pics5 {
+  width: 48vw;
+  margin-left: 1.5vw;
+  margin-top: 32vw;
+  position: absolute;
+} 
+
+#pics6 {
+  width: 48vw;
+  margin-left: -48vw;
+  margin-top: 60.5vw;
+  position: absolute;
+} 
+
+#pics7 {
+  width: 48vw;
+  margin-left: -48vw;
+  margin-top: 74vw;
+  position: absolute;
+}  
+
+#pics8 {
+  width: 48vw;
+  margin-left: 1.5vw;
+  margin-top: 60.5vw;
+  position: absolute;
+}   
+/* ---картинки--- */
+
+/* ---линия под картинками--- */
+.viola {
+  margin-top: -5vw;
+}
+
+.liness{
+  position: relative;
+}
+
+#line555 {
+width: 100%;
+}
+/* ---линия под картинками--- */
+
+/* ---глифы в деталях--- */
+.caps5 {
+  width: 4vw;
+  margin-top: -22vw;
+  margin-left: 38vw;
+  mix-blend-mode: difference;
+  animation: flicker 0.9s infinite, shake 0.1s infinite;
+}
+
+.caps6 {
+  width: 28vw;
+  margin-top: 2vw;
+  margin-left: 60vw;
+  position: absolute;
+  mix-blend-mode: difference;
+  animation: flicker 2s infinite, shake 0.1s infinite;
+}
+/* ---глифы в деталях--- */
+
+/* ---бегущие строчки--- */
+.texte {
+  width: 100vw;
+  overflow: hidden;
+  margin-top: 1vw;
+}
+
+.text4 {
+  display: flex;
+  margin-top: 0vw;
+  font-size: 3vw;
+  font-family: inter regular;
+  white-space: nowrap;
+  color: #BD7DD8;
+  animation: run4 5s infinite linear;
+  letter-spacing: 8vw;
+}
+  
+.text2:hover {
+  animation-play-state: paused;
+}
+      
+@keyframes run4 {
+      0% {
+          transform: translateX(-100vw);
+      }
+      
+      100% {
+          transform: translateX(0vw);
+      }
+    }
+
+.text5 {
+  display: flex;
+  margin-top: 0vw;
+  font-size: 4vw;
+  font-family: inter regular;
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+  animation: run5 8s infinite linear;
+  letter-spacing: 10vw;
+}
+      
+.text3:hover {
+  animation-play-state: paused;
+}
+          
+@keyframes run5 {
+0% {
+     transform: translateX(0vw);
+   }
+          
+100% {
+     transform: translateX(-100vw);
+  }
+}
+/* ---бегущие строчки--- */
+
+/* ---путеводитель--- */
+.titleee2 {
+  width: 94%;
+  display: flex;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin: 4vw  auto 0 ;
+  margin-bottom: 3vw;
+  margin-left: 6vw;
+  font-size: 3vw;
+  letter-spacing: 1vw;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+/* ---путеводитель--- */
+
+/* ---книга--- */
+.bookList {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.left {
+  width: 4vw;
+  padding: 1vw;
+}
+
+.pages {
+  width: 70%;
+  height: 36.5vw;
+  margin: 6vw auto;
+  position: relative;
+}
+
+.book {
+  width: 100%;
+  height: 36.5vw;
+  background-size: 100%;
+  position: absolute;
+}
+
+#book1 {
+  background-image: url("../img/page1.png");
+  opacity: 1;
+}
+
+#book2 {
+  background-image: url("../img/page2.png");
+
+  filter: brightness(0.8);
+}
+
+#book3 {
+  background-image: url("../img/page3.png");
+  filter: brightness(0.6);
+}
+
+.hihi {
+  margin-top: -1vw;
+}
+
+.circc {
+  margin-bottom: 20vw;
+}
+
+/* ---книга--- */
+
+/* ---детали--- */
+.titleee111 {
+  width: 96%;
+  display: flex;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin: 2vw  auto 0 ;
+  margin-left: 5vw;
+  font-size: 3vw;
+  letter-spacing: 1vw;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+#arrrr {
+  width: 55%;
+  margin-left: 21vw;
+}
+
+.vs {
+  width: 30%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: 5vw;
+  margin-left: 6.5vw;
+  font-size: 1.4vw;
+  letter-spacing: 1vw;
+}
+
+.title8 {
+  width: 15%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: -4vw;
+  margin-left: 31vw;
+  font-size: 1vw;
+  letter-spacing: 0.8vw;
+}
+
+.title9 {
+  width: 30%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: -33.5vw;
+  margin-left: 57vw;
+  font-size: 1.4vw;
+  letter-spacing: 1vw;
+}
+
+.title10 {
+  width: 19%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: -4vw;
+  margin-left: 75vw;
+  font-size: 1vw;
+  letter-spacing: 0.8vw;
+}
+/* ---детали--- */
+
+/* ---хутер--- */
+ .ending {
+  margin-left: 5vw;
+  margin-bottom: 4vw;
+  writing-mode: vertical-rl; 
+  font-family: inter regular;
+  transform: rotate(180deg); 
+  font-size: 2vw; 
+  letter-spacing: 1vw;
+  color: #BD7DD8; 
+}
+
+.title5 {
+  width: 20%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: -17vw;
+  margin-left: 13vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.5vw;
+}
+
+.title6 {
+  width: 8%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: -8vw;
+  margin-left: 52vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.5vw;
+}
+
+.title7 {
+  width: 10%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: -10vw;
+  margin-left: 78vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.5vw;
+}  
+/* ---хутер--- */
+
+

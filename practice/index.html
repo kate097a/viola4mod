@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">">
+    <title>Web Poster</title>
+      <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
+        <script src="./javascripts/java-script.js" charset="utf-8"></script>
+        <script src="./javascripts/jquery-3.7.1.min.js" charset="utf-8"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
+        <script>
+            var sound = new Howl({
+              src: ['music.mp3'],
+              volume: 0.5,
+              loop: true,
+            });
+        </script>
+  </head>
+  <body>
+
+    <div class="cursorDot" id="cursorDot"></div>
+
+    <header> 
+      <nav class="menu">
+    <form class="button" action="../index.html">
+      <button class="menuTip"  id="button1">FRAME 88</button>
+    </form>
+    
+      <img class="arrow" src="./images/Line 37.svg">
+    
+      <form class="button" action="../space/index.html">
+        <button class="menuTip"  id="button2">Пространство</button>
+      </form>
+    
+      <form class="button" action="../events/index.html">
+        <button class="menuTip"  id="button3">Мероприятие</button>
+      </form>
+    
+      <form class="button" action="../shop/index.html">
+        <button class="menuTip"  id="button4">Магазин</button>
+      </form>
+    
+      <form class="button" action="../practice/index.html">
+        <button class="menuTip"  id="button5">Практика</button>
+      </form>
+    
+      </nav>
+    </header>
+    
+   <section class="start"> 
+    <img class="mainTitle" src="./images/startText.svg">
+    <div class="eyes" id="eyesBlock">
+      <img class="eye" id="eye1" src="./images/eye.svg">
+      <img class="eye" id="eye2" src="./images/eye.svg">
+      <img class="eye" id="eye3" src="./images/eye.svg">
+      <img class="eye" id="eye4" src="./images/eye.svg">
+      <img class="eye" id="eye5" src="./images/eye.svg">
+      <img class="eye" id="eye6" src="./images/eye.svg">
+      <img class="eye" id="eye7" src="./images/eye.svg">
+      <img class="eye" id="eye8" src="./images/eye.svg">
+      <img class="eye" id="eye9" src="./images/eye.svg">
+      <img class="eye" id="eye10" src="./images/eye.svg">
+      <img class="eye" id="eye11" src="./images/eye.svg">
+      <img class="eye" id="eye12" src="./images/eye.svg">
+      <img class="eye" id="eye13" src="./images/eye.svg">
+      <img class="eye" id="eye14" src="./images/eye.svg">
+      <img class="eye" id="eye15" src="./images/eye.svg">
+      <img class="eye" id="eye16" src="./images/eye.svg">
+      <img class="eye" id="eye17" src="./images/eye.svg">
+      <img class="eye" id="eye18" src="./images/eye.svg">
+      <img class="eye" id="eye19" src="./images/eye.svg">
+      <img class="eye" id="eye20" src="./images/eye.svg">
+      <img class="eye" id="eye21" src="./images/eye.svg">
+      <img class="eye" id="eye22" src="./images/eye.svg">
+      <img class="eye" id="eye23" src="./images/eye.svg">
+      <img class="eye" id="eye24" src="./images/eye.svg">
+      <img class="eye" id="eye25" src="./images/eye.svg">
+      <img class="eye" id="eye26" src="./images/eye.svg">
+      <img class="eye" id="eye27" src="./images/eye.svg">
+      <img class="eye" id="eye28" src="./images/eye.svg">
+      <img class="eye" id="eye29" src="./images/eye.svg">
+      <img class="eye" id="eye30" src="./images/eye.svg">
+      <img class="eye" id="eye31" src="./images/eye.svg">
+      <img class="eye" id="eye32" src="./images/eye.svg">
+      <img class="eye" id="eye33" src="./images/eye.svg">
+      <img class="eye" id="eye34" src="./images/eye.svg">
+      <img class="eye" id="eye35" src="./images/eye.svg">
+      <img class="eye" id="eye36" src="./images/eye.svg">
+      <img class="eye" id="eye37" src="./images/eye.svg">
+      <img class="eye" id="eye38" src="./images/eye.svg">
+      <img class="eye" id="eye39" src="./images/eye.svg">
+      <img class="eye" id="eye40" src="./images/eye.svg">
+      <img class="eye" id="eye41" src="./images/eye.svg">
+      <img class="eye" id="eye42" src="./images/eye.svg">
+      <img class="eye" id="eye43" src="./images/eye.svg">
+      <img class="eye" id="eye44" src="./images/eye.svg">
+      <img class="eye" id="eye45" src="./images/eye.svg">
+      <img class="eye" id="eye46" src="./images/eye.svg">
+      <img class="eye" id="eye47" src="./images/eye.svg">
+      <img class="eye" id="eye48" src="./images/eye.svg">
+      <img class="eye" id="eye49" src="./images/eye.svg">
+      <img class="eye" id="eye50" src="./images/eye.svg">
+      <img class="eye" id="eye51" src="./images/eye.svg">
+      <img class="eye" id="eye52" src="./images/eye.svg">
+      <img class="eye" id="eye53" src="./images/eye.svg">
+      <img class="eye" id="eye54" src="./images/eye.svg">
+      <img class="eye" id="eye55" src="./images/eye.svg">
+      <img class="eye" id="eye56" src="./images/eye.svg">
+      <img class="eye" id="eye57" src="./images/eye.svg">
+      <img class="eye" id="eye58" src="./images/eye.svg">
+      <img class="eye" id="eye59" src="./images/eye.svg">
+      <img class="eye" id="eye60" src="./images/eye.svg">
+      <img class="eye" id="eye61" src="./images/eye.svg">
+      <img class="eye" id="eye62" src="./images/eye.svg">
+      <img class="eye" id="eye63" src="./images/eye.svg">
+      <img class="eye" id="eye64" src="./images/eye.svg">
+      <img class="eye" id="eye65" src="./images/eye.svg">
+      <img class="eye" id="eye66" src="./images/eye.svg">
+      <img class="eye" id="eye67" src="./images/eye.svg">
+      <img class="eye" id="eye68" src="./images/eye.svg">
+      <img class="eye" id="eye69" src="./images/eye.svg">
+      <img class="eye" id="eye70" src="./images/eye.svg">
+      <img class="eye" id="eye71" src="./images/eye.svg">
+      <img class="eye" id="eye72" src="./images/eye.svg">
+      <img class="eye" id="eye73" src="./images/eye.svg">
+      <img class="eye" id="eye74" src="./images/eye.svg">
+      <img class="eye" id="eye75" src="./images/eye.svg">
+      <img class="eye" id="eye76" src="./images/eye.svg">
+      <img class="eye" id="eye77" src="./images/eye.svg">
+      <img class="eye" id="eye78" src="./images/eye.svg">
+      <img class="eye" id="eye79" src="./images/eye.svg">
+      <img class="eye" id="eye80" src="./images/eye.svg">
+      <img class="eye" id="eye81" src="./images/eye.svg">
+      <img class="eye" id="eye82" src="./images/eye.svg">
+      <img class="eye" id="eye83" src="./images/eye.svg">
+      <img class="eye" id="eye84" src="./images/eye.svg">
+      <img class="eye" id="eye85" src="./images/eye.svg">
+      <img class="eye" id="eye86" src="./images/eye.svg">
+      <img class="eye" id="eye87" src="./images/eye.svg">
+      <img class="eye" id="eye88" src="./images/eye.svg">
+      <img class="eye" id="eye89" src="./images/eye.svg">
+      <img class="eye" id="eye90" src="./images/eye.svg">
+      <img class="eye" id="eye91" src="./images/eye.svg">
+      <img class="eye" id="eye92" src="./images/eye.svg">
+      <img class="eye" id="eye93" src="./images/eye.svg">
+      <img class="eye" id="eye94" src="./images/eye.svg">
+      <img class="eye" id="eye95" src="./images/eye.svg">
+      <img class="eye" id="eye96" src="./images/eye.svg">
+      <img class="eye" id="eye97" src="./images/eye.svg">
+      <img class="eye" id="eye98" src="./images/eye.svg">
+      <img class="eye" id="eye99" src="./images/eye.svg">
+      <img class="eye" id="eye100" src="./images/eye.svg">
+      <img class="eye" id="eye101" src="./images/eye.svg">
+      <img class="eye" id="eye102" src="./images/eye.svg">
+      <img class="eye" id="eye103" src="./images/eye.svg">
+      <img class="eye" id="eye104" src="./images/eye.svg">
+      <img class="eye" id="eye105" src="./images/eye.svg">
+      <img class="eye" id="eye106" src="./images/eye.svg">
+      <img class="eye" id="eye107" src="./images/eye.svg">
+      <img class="eye" id="eye108" src="./images/eye.svg">
+      <img class="eye" id="eye109" src="./images/eye.svg">
+      <img class="eye" id="eye110" src="./images/eye.svg">
+      <img class="eye" id="eye111" src="./images/eye.svg">
+      <img class="eye" id="eye112" src="./images/eye.svg">
+      <img class="eye" id="eye113" src="./images/eye.svg">
+      <img class="eye" id="eye114" src="./images/eye.svg">
+      <img class="eye" id="eye115" src="./images/eye.svg">
+      <img class="eye" id="eye116" src="./images/eye.svg">
+      <img class="eye" id="eye117" src="./images/eye.svg">
+      <img class="eye" id="eye118" src="./images/eye.svg">
+      <img class="eye" id="eye119" src="./images/eye.svg">
+      <img class="eye" id="eye120" src="./images/eye.svg">
+      <img class="eye" id="eye121" src="./images/eye.svg">
+      <img class="eye" id="eye122" src="./images/eye.svg">
+      <img class="eye" id="eye123" src="./images/eye.svg">
+      <img class="eye" id="eye124" src="./images/eye.svg">
+      <img class="eye" id="eye125" src="./images/eye.svg">
+      <img class="eye" id="eye126" src="./images/eye.svg">
+      <img class="eye" id="eye127" src="./images/eye.svg">
+      <img class="eye" id="eye128" src="./images/eye.svg">
+      <img class="eye" id="eye129" src="./images/eye.svg">
+      <img class="eye" id="eye130" src="./images/eye.svg">
+      <img class="eye" id="eye131" src="./images/eye.svg">
+      <img class="eye" id="eye132" src="./images/eye.svg">
+      <img class="eye" id="eye133" src="./images/eye.svg">
+      <img class="eye" id="eye134" src="./images/eye.svg">
+      <img class="eye" id="eye135" src="./images/eye.svg">
+      <img class="eye" id="eye136" src="./images/eye.svg">
+      <img class="eye" id="eye137" src="./images/eye.svg">
+      <img class="eye" id="eye138" src="./images/eye.svg">
+      <img class="eye" id="eye139" src="./images/eye.svg">
+      <img class="eye" id="eye140" src="./images/eye.svg">
+      <img class="eye" id="eye141" src="./images/eye.svg">
+      <img class="eye" id="eye142" src="./images/eye.svg">
+      <img class="eye" id="eye143" src="./images/eye.svg">
+      <img class="eye" id="eye144" src="./images/eye.svg">
+      <img class="eye" id="eye145" src="./images/eye.svg">
+      <img class="eye" id="eye146" src="./images/eye.svg">
+      <img class="eye" id="eye147" src="./images/eye.svg">
+      <img class="eye" id="eye148" src="./images/eye.svg">
+      <img class="eye" id="eye149" src="./images/eye.svg">
+      <img class="eye" id="eye150" src="./images/eye.svg">
+      <img class="eye" id="eye151" src="./images/eye.svg">
+      <img class="eye" id="eye152" src="./images/eye.svg">
+      <img class="eye" id="eye153" src="./images/eye.svg">
+      <img class="eye" id="eye154" src="./images/eye.svg">
+      <img class="eye" id="eye155" src="./images/eye.svg">
+      <img class="eye" id="eye156" src="./images/eye.svg">
+      <img class="eye" id="eye157" src="./images/eye.svg">
+      <img class="eye" id="eye158" src="./images/eye.svg">
+      <img class="eye" id="eye159" src="./images/eye.svg">
+      <img class="eye" id="eye160" src="./images/eye.svg">
+      <img class="eye" id="eye161" src="./images/eye.svg">
+      <img class="eye" id="eye162" src="./images/eye.svg">
+      <img class="eye" id="eye163" src="./images/eye.svg">
+      <img class="eye" id="eye164" src="./images/eye.svg">
+      <img class="eye" id="eye165" src="./images/eye.svg">
+      <img class="eye" id="eye166" src="./images/eye.svg">
+      <img class="eye" id="eye167" src="./images/eye.svg">
+      <img class="eye" id="eye168" src="./images/eye.svg">
+      <img class="eye" id="eye169" src="./images/eye.svg">
+      <img class="eye" id="eye170" src="./images/eye.svg">
+      <img class="eye" id="eye171" src="./images/eye.svg">
+      <img class="eye" id="eye172" src="./images/eye.svg">
+      <img class="eye" id="eye173" src="./images/eye.svg">
+      <img class="eye" id="eye174" src="./images/eye.svg">
+      <img class="eye" id="eye175" src="./images/eye.svg">
+      <img class="eye" id="eye176" src="./images/eye.svg">
+      <img class="eye" id="eye177" src="./images/eye.svg">
+      <img class="eye" id="eye178" src="./images/eye.svg">
+      <img class="eye" id="eye179" src="./images/eye.svg">
+      <img class="eye" id="eye180" src="./images/eye.svg">
+      <img class="eye" id="eye181" src="./images/eye.svg">
+      <img class="eye" id="eye182" src="./images/eye.svg">
+      <img class="eye" id="eye183" src="./images/eye.svg">
+      <img class="eye" id="eye184" src="./images/eye.svg">
+      <img class="eye" id="eye185" src="./images/eye.svg">
+      <img class="eye" id="eye186" src="./images/eye.svg">
+      <img class="eye" id="eye187" src="./images/eye.svg">
+      <img class="eye" id="eye188" src="./images/eye.svg">
+      <img class="eye" id="eye189" src="./images/eye.svg">
+      <img class="eye" id="eye190" src="./images/eye.svg">
+      <img class="eye" id="eye191" src="./images/eye.svg">
+      <img class="eye" id="eye192" src="./images/eye.svg">
+      <img class="eye" id="eye193" src="./images/eye.svg">
+      <img class="eye" id="eye194" src="./images/eye.svg">
+      <img class="eye" id="eye195" src="./images/eye.svg">
+      <img class="eye" id="eye196" src="./images/eye.svg">
+      <img class="eye" id="eye197" src="./images/eye.svg">
+      <img class="eye" id="eye198" src="./images/eye.svg">
+      <img class="eye" id="eye199" src="./images/eye.svg">
+      <img class="eye" id="eye200" src="./images/eye.svg">
+    </div>
+    <div id="fixer"></div>
+   </section>
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+   <section class="rotation" id="rotateCircles">
+    <div class="circles" id="circlesBlock"> 
+     <img class="circle" id="circle1" src="./images/circles5.svg">
+     <img class="circle" id="circle2" src="./images/circles3.svg">
+     <img class="circle" id="circle3" src="./images/circles1.svg">
+     <img class="circle" id="circle4" src="./images/circles6.svg">
+     <img class="circle" id="circle5" src="./images/circles9.svg">
+     <img class="circle" id="circle6" src="./images/circles11.svg">
+     <img class="circle" id="circle7" src="./images/circles12.svg">
+     <img class="circle" id="circle8" src="./images/circles3.svg">
+     <img class="circle" id="circle9" src="./images/circles1.svg">
+     <img class="circle" id="circle10" src="./images/circles11.svg">
+     <img class="circle" id="circle11" src="./images/circles6.svg">
+     <img class="circle" id="circle12" src="./images/circles3.svg">
+     <img class="circle" id="circle13" src="./images/circles5.svg">
+     <img class="circle" id="circle14" src="./images/circles1.svg">
+     <img class="circle" id="circle15" src="./images/circles9.svg">
+     <img class="circle" id="circle16" src="./images/circles3.svg">
+     <img class="circle" id="circle17" src="./images/circles12.svg">
+     <img class="circle" id="circle18" src="./images/circles11.svg">
+  </div> 
+  
+</section>
+
+
+  <div class="hole"> 
+    <img src="./images/background.svg" alt="">
+    <img src="./images/background.svg" alt="">
+    <img src="./images/background.svg" alt="">
+    <img src="./images/background.svg" alt="">
+  </div>
+
+  <div class="curve">
+    <img class="curveLine" src="./images/curve.svg">
+  </div>
+
+  <section class="greetings"> 
+    <div class="words" id="wordsBlock">
+      <img class="hi" id="Q1" src="./images/1lol.svg">
+      <img class="hi" id="W1" src="./images/2lol.svg"> 
+      <img class="hi" id="E1" src="./images/3lol.svg">
+      <img class="hi" id="R1" src="./images/4lol.svg">
+      <img class="hi" id="T1" src="./images/5lol.svg">
+      <img class="hi" id="Y2" src="./images/6lol.svg">
+      <img class="hi" id="U1" src="./images/7lol.svg">
+      <img class="hi" id="I2" src="./images/8lol.svg"> 
+      <img class="hi" id="O2" src="./images/9lol.svg">
+      <img class="hi" id="P2" src="./images/10lol.svg">
+      <img class="hi" id="A3" src="./images/11lol.svg">
+      <img class="hi" id="S2" src="./images/12lol.svg">
+      <img class="hi" id="D3" src="./images/13lol.svg">
+      <img class="hi" id="F2" src="./images/14lol.svg">
+      <img class="hi" id="G2" src="./images/15lol.svg">
+      <img class="hi" id="H2" src="./images/16lol.svg">
+      <img class="hi" id="J2" src="./images/17lol.svg">
+      <img class="hi" id="K4" src="./images/18lol.svg">
+      <img class="hi" id="L1" src="./images/19lol.svg">
+      <img class="hi" id="Z3" src="./images/20lol.svg">
+      <img class="hi" id="X1" src="./images/21lol.svg">
+      <img class="hi" id="C3" src="./images/22lol.svg">
+      <img class="hi" id="V3" src="./images/23lol.svg">
+      <img class="hi" id="B4" src="./images/24lol.svg">
+
+      <img class="hi" id="eye201" src="./images/eye.svg">
+      <img class="hi" id="eye202" src="./images/eye.svg">
+      <img class="hi" id="eye203" src="./images/eye.svg">
+      <img class="hi" id="eye204" src="./images/eye.svg">
+      <img class="hi" id="eye205" src="./images/eye.svg">
+      <img class="hi" id="eye206" src="./images/eye.svg">
+      <img class="hi" id="eye207" src="./images/eye.svg">
+      <img class="hi" id="eye208" src="./images/eye.svg">
+      <img class="hi" id="eye209" src="./images/eye.svg">
+      <img class="hi" id="eye210" src="./images/eye.svg">
+      <img class="hi" id="eye211" src="./images/eye.svg">
+      <img class="hi" id="eye212" src="./images/eye.svg">
+      <img class="hi" id="eye213" src="./images/eye.svg">
+      <img class="hi" id="eye214" src="./images/eye.svg">
+      <img class="hi" id="eye215" src="./images/eye.svg">
+      <img class="hi" id="eye215" src="./images/eye.svg">
+      <img class="hi" id="eye216" src="./images/eye.svg">
+      <img class="hi" id="eye217" src="./images/eye.svg">
+      <img class="hi" id="eye218" src="./images/eye.svg">
+      <img class="hi" id="eye219" src="./images/eye.svg">
+      <img class="hi" id="eye220" src="./images/eye.svg">
+      <img class="hi" id="eye221" src="./images/eye.svg">
+      <img class="hi" id="eye222" src="./images/eye.svg">
+      <img class="hi" id="eye223" src="./images/eye.svg">
+      <img class="hi" id="eye224" src="./images/eye.svg">
+      <img class="hi" id="eye225" src="./images/eye.svg">
+      <img class="hi" id="eye226" src="./images/eye.svg">
+      <img class="hi" id="eye227" src="./images/eye.svg">
+      <img class="hi" id="eye228" src="./images/eye.svg">
+      <img class="hi" id="eye229" src="./images/eye.svg">
+      <img class="hi" id="eye230" src="./images/eye.svg">
+      <img class="hi" id="eye231" src="./images/eye.svg">
+      <img class="hi" id="eye232" src="./images/eye.svg">
+      <img class="hi" id="eye233" src="./images/eye.svg">
+      <img class="hi" id="eye234" src="./images/eye.svg">
+      <img class="hi" id="eye235" src="./images/eye.svg">
+      <img class="hi" id="eye236" src="./images/eye.svg">
+      <img class="hi" id="eye237" src="./images/eye.svg">
+      <img class="hi" id="eye238" src="./images/eye.svg">
+      <img class="hi" id="eye239" src="./images/eye.svg">
+    </div> 
+  </section> 
+
+    <div class="hole2"> 
+    <img src="./images/background.svg" alt="">
+    <img src="./images/background.svg" alt="">
+    <img src="./images/background.svg" alt="">
+    <img src="./images/background.svg" alt="">
+    </div>
+
+  <div class="curve2">
+    <img class="curveLine2" src="./images/curve4.svg">
+  </div>
+
+  <section class="rotation" id="rot">
+    <div class="bigWow" id="bigWowBlock">
+      <img class="wow" id="wow1" src="./images/wow2.svg">
+      <img class="wow" id="wow2" src="./images/wow3.svg">
+      <img class="wow" id="wow3" src="./images/wow7.svg">
+      <img class="wow" id="wow4" src="./images/wow7.svg">
+      <img class="wow" id="wow5" src="./images/wow7.svg">
+      <img class="wow" id="wow6" src="./images/wow3.svg">
+      <img class="wow" id="wow7" src="./images/wow2.svg">
+      <img class="wow" id="wow8" src="./images/wow7.svg">
+      <img class="wow" id="wow9" src="./images/wow2.svg">
+      <img class="wow" id="wow10" src="./images/wow2.svg">
+      <img class="wow" id="wow11" src="./images/wow3.svg">
+      <img class="wow" id="wow12" src="./images/wow2.svg">
+      <img class="wow" id="wow13" src="./images/wow7.svg">
+      <img class="wow" id="wow14" src="./images/wow2.svg">
+      <img class="wow" id="wow15" src="./images/wow3.svg">
+      <img class="wow" id="wow16" src="./images/wow7.svg">
+    </div> 
+  </section> 
+
+  <section class="dynamics"> 
+    <img class="YYY" src="./images/yoy2.svg">
+    <div class="letters" id="lettersBlock">
+
+      <hr class="vertical-line">
+
+      <div class="left" id="Ellipse0"></div>
+      <div class="left" id="Ellipse1"></div>
+      <div class="left" id="Ellipse2"></div>
+      <div class="left" id="Ellipse3"></div>
+      <div class="left" id="Ellipse4"></div>
+      <div class="left" id="Ellipse5"></div>
+      <div class="left" id="Ellipse6"></div>
+      <div class="left" id="Ellipse7"></div>
+      <div class="left" id="Ellipse8"></div>
+      <div class="left" id="Ellipse9"></div>
+      <div class="left" id="Ellipse10"></div>
+      <div class="left" id="Ellipse11"></div>
+      <div class="left" id="Ellipse12"></div>
+      <div class="left" id="Ellipse13"></div>
+      <div class="left" id="Ellipse14"></div>
+      <div class="left" id="Ellipse15"></div>
+      <div class="left" id="Ellipse16"></div>
+      <div class="left" id="Ellipse17"></div>
+      <div class="left" id="Ellipse18"></div>
+
+      <img class="left" id="d" src="./images/d.svg">
+      <img class="left" id="i" src="./images/i.svg">
+      <img class="left" id="n" src="./images/n.svg">
+      <img class="left" id="a" src="./images/a.svg">
+      <img class="left" id="m" src="./images/m.svg">
+      <img class="left" id="i2" src="./images/i2.svg">
+      <img class="left" id="k" src="./images/k.svg">
+      <img class="left" id="a2" src="./images/a2.svg">
+
+      <img class="left" id="ell" src="./images/Ellipse.svg">
+      <img class="left" id="ell1" src="./images/Ellipse.svg">
+      <img class="left" id="ell2" src="./images/Ellipse.svg">
+      <img class="left" id="ell3" src="./images/Ellipse.svg">
+      <img class="left" id="ell4" src="./images/Ellipse.svg">
+      <img class="left" id="ell5" src="./images/Ellipse.svg">
+      <img class="left" id="ell6" src="./images/Ellipse.svg">
+      <img class="left" id="ell7" src="./images/Ellipse.svg">     
+      <img class="left" id="ell8" src="./images/Ellipse.svg">
+      <img class="left" id="ell9" src="./images/Ellipse.svg">
+      <img class="left" id="ell10" src="./images/Ellipse.svg">
+      <img class="left" id="ell11" src="./images/Ellipse.svg">
+      <img class="left" id="ell12" src="./images/Ellipse.svg">
+      <img class="left" id="ell13" src="./images/Ellipse.svg">
+      <img class="left" id="ell14" src="./images/Ellipse.svg">
+      <img class="left" id="ell15" src="./images/Ellipse.svg">
+      <img class="left" id="ell16" src="./images/Ellipse.svg">
+      <img class="left" id="ell17" src="./images/Ellipse.svg">
+      <img class="left" id="ell18" src="./images/Ellipse.svg">
+      <img class="left" id="ell19" src="./images/Ellipse.svg">
+      <img class="left" id="ell20" src="./images/Ellipse.svg">
+      <img class="left" id="ell21" src="./images/Ellipse.svg">
+      <img class="left" id="ell22" src="./images/Ellipse.svg">
+      <img class="left" id="ell23" src="./images/Ellipse.svg">
+      <img class="left" id="ell24" src="./images/Ellipse.svg">
+      <img class="left" id="ell25" src="./images/Ellipse.svg">
+      <img class="left" id="ell26" src="./images/Ellipse.svg">
+      <img class="left" id="ell27" src="./images/Ellipse.svg">
+      <img class="left" id="ell28" src="./images/Ellipse.svg">
+      <img class="left" id="ell29" src="./images/Ellipse.svg">
+      <img class="left" id="ell30" src="./images/Ellipse.svg">
+
+      <img class="left" id="white" src="./images/white.svg">
+      <img class="left" id="black" src="./images/black.svg">
+      <img class="left" id="white1" src="./images/white.svg">
+      <img class="left" id="black1" src="./images/black.svg">
+      <img class="left" id="white2" src="./images/white.svg">
+      <img class="left" id="black2" src="./images/black.svg">
+      <img class="left" id="white3" src="./images/white.svg">
+      <img class="left" id="black3" src="./images/black.svg">
+
+      <img class="left" id="flow" src="./images/flow.svg">
+      <img class="left" id="flow1" src="./images/flow.svg">
+      <img class="left" id="flow2" src="./images/flow.svg">
+      <img class="left" id="flow3" src="./images/flow.svg">
+      <img class="left" id="flow4" src="./images/flow.svg">
+      <img class="left" id="flow5" src="./images/flow.svg">
+      <img class="left" id="flow6" src="./images/flow.svg">
+      <img class="left" id="flow7" src="./images/flow.svg">
+
+      <img class="left" id="dvig" src="./images/dvig.svg">
+      <img class="left" id="drog" src="./images/drog.svg">
+      <img class="left" id="vivi" src="./images/vivi.svg">
+      <img class="left" id="momo" src="./images/momo.svg">
+
+      <img class="left" id="trans1" src="./images/trans.svg">
+      <img class="left" id="trans2" src="./images/trans.svg">
+      <img class="left" id="trans3" src="./images/trans.svg">
+      <img class="left" id="trans4" src="./images/trans.svg">
+      <img class="left" id="trans5" src="./images/trans.svg">
+      <img class="left" id="trans6" src="./images/trans.svg">
+      <img class="left" id="trans7" src="./images/trans.svg">
+      <img class="left" id="trans8" src="./images/trans.svg">
+      <img class="left" id="trans9" src="./images/trans.svg">
+      <img class="left" id="trans10" src="./images/trans.svg">
+      <img class="left" id="trans11" src="./images/trans.svg">
+      <img class="left" id="trans12" src="./images/trans.svg">
+      <img class="left" id="trans13" src="./images/trans.svg">
+      <img class="left" id="trans14" src="./images/trans.svg">
+      <img class="left" id="trans15" src="./images/trans.svg">
+      <img class="left" id="trans16" src="./images/trans.svg">
+      <img class="left" id="trans17" src="./images/trans.svg">
+      <img class="left" id="trans18" src="./images/trans.svg">
+      <img class="left" id="trans19" src="./images/trans.svg">
+      <img class="left" id="trans20" src="./images/trans.svg">
+      <img class="left" id="trans21" src="./images/trans.svg">
+      <img class="left" id="trans22" src="./images/trans.svg">
+    </div> 
+  </section> 
+
+  <section class="painter"> 
+    <canvas class="drawingBoard" id="canvas"></canvas>
+    <div class="paints" id="paintsBlock">
+      <img class="paint" id="draw" src="./images/paint1.svg">
+
+      <img class="letter" id="lt1" src="./images/let1.svg">
+      <img class="letter" id="lt2" src="./images/let2.svg">
+      <img class="letter" id="lt3" src="./images/let3.svg">
+      <img class="letter" id="lt4" src="./images/let4.svg">
+      <img class="letter" id="lt5" src="./images/let5.svg">
+      <img class="letter" id="lt6" src="./images/let6.svg">
+      <img class="letter" id="lt7" src="./images/let7.svg">
+      <img class="letter" id="lt8" src="./images/let8.svg">
+      <img class="letter" id="lt9" src="./images/let9.svg">
+      <img class="letter" id="lt10" src="./images/let10.svg">
+
+      <img class="letter" id="vec1" src="./images/vec1.svg">
+      <img class="letter" id="vec2" src="./images/vec2.svg">
+      <img class="letter" id="vec3" src="./images/vec3.svg">
+      <img class="letter" id="vec4" src="./images/vec5.svg">
+      <img class="letter" id="vec5" src="./images/vec7.svg">
+
+      <img class="letter" id="puz1" src="./images/puzzle1.svg">
+      <img class="letter" id="puz2" src="./images/puzzle2.svg">
+      <img class="letter" id="puz3" src="./images/puzzle3.svg">
+      <img class="letter" id="puz4" src="./images/puzzle4.svg">
+      <img class="letter" id="puz5" src="./images/puzzle5.svg">
+      <img class="letter" id="puz6" src="./images/puzzle6.svg">
+      <img class="letter" id="puz7" src="./images/puzzle7.svg">
+    </div>  
+  </section> 
+
+  <script src="javascripts/java-script.js" charset="utf-8"></script>
+
+  <section class="enddd"> 
+    <div class="alll" id="allBlock">
+
+      <button id="mussic"></button>
+
+      <img class="v" id="vi3" src="./images/vi.svg">
+      <img class="v" id="vi4" src="./images/vi.svg">
+      <img class="v" id="vi5" src="./images/vi.svg">
+      <img class="v" id="vi6" src="./images/vi.svg">
+      <img class="v" id="vi7" src="./images/vi.svg">
+      <img class="v" id="vi8" src="./images/vi.svg">
+      <img class="v" id="vi9" src="./images/vi.svg">
+      <img class="v" id="vi10" src="./images/vi.svg">
+      <img class="v" id="vi11" src="./images/vi.svg">
+      <img class="v" id="vi12" src="./images/vi.svg">
+      <img class="v" id="vi13" src="./images/vi.svg">
+      <img class="v" id="vi14" src="./images/vi.svg">
+      <img class="v" id="vi15" src="./images/vi.svg">
+      <img class="v" id="vi16" src="./images/vi.svg">
+      <img class="v" id="vi17" src="./images/vi.svg">
+      <img class="v" id="vi18" src="./images/vi.svg">
+      <img class="v" id="vi19" src="./images/vi.svg">
+      <img class="v" id="vi20" src="./images/vi.svg">
+      <img class="v" id="vi21" src="./images/vi.svg">
+      <img class="v" id="vi22" src="./images/vi.svg">   
+      <img class="v" id="vi23" src="./images/vi.svg">
+      <img class="v" id="vi24" src="./images/vi.svg">
+      <img class="v" id="vi26" src="./images/vi.svg">
+      <img class="v" id="vi27" src="./images/vi.svg">
+      <img class="v" id="vi28" src="./images/vi.svg">
+      <img class="v" id="vi30" src="./images/vi.svg">
+      <img class="v" id="vi31" src="./images/vi.svg">
+      <img class="v" id="vi32" src="./images/vi.svg">
+      <img class="v" id="vi33" src="./images/vi.svg">
+      <img class="v" id="vi34" src="./images/vi.svg">
+      <img class="v" id="vi35" src="./images/vi.svg">     
+      <img class="v" id="vi36" src="./images/vi.svg">
+      <img class="v" id="vi37" src="./images/vi.svg">     
+      <img class="v" id="vi38" src="./images/vi.svg">     
+      <img class="v" id="vi39" src="./images/vi.svg">     
+      <img class="v" id="vi40" src="./images/vi.svg"> 
+      <img class="v" id="vi41" src="./images/vi.svg">       
+      <img class="v" id="vi42" src="./images/vi.svg">   
+      <img class="v" id="vi43" src="./images/vi.svg">   
+      <img class="v" id="vi44" src="./images/vi.svg"> 
+      <img class="v" id="vi45" src="./images/vi.svg">   
+      <img class="v" id="vi47" src="./images/vi.svg">   
+      <img class="v" id="vi48" src="./images/vi.svg">   
+      <img class="v" id="vi49" src="./images/vi.svg">   
+      <img class="v" id="vi50" src="./images/vi.svg">   
+      <img class="v" id="vi52" src="./images/vi.svg">   
+      <img class="v" id="vi53" src="./images/vi.svg">   
+      <img class="v" id="vi54" src="./images/vi.svg">   
+      <img class="v" id="vi56" src="./images/vi.svg"> 
+      <img class="v" id="vi57" src="./images/vi.svg">   
+      <img class="v" id="vi60" src="./images/vi.svg"> 
+      <img class="v" id="vi61" src="./images/vi.svg"> 
+      <img class="v" id="vi64" src="./images/vi.svg"> 
+      <img class="v" id="vi65" src="./images/vi.svg"> 
+      <img class="v" id="vi67" src="./images/vi.svg"> 
+      <img class="v" id="vi68" src="./images/vi.svg"> 
+      <img class="v" id="vi69" src="./images/vi.svg"> 
+      <img class="v" id="vi71" src="./images/vi.svg"> 
+      <img class="v" id="vi72" src="./images/vi.svg"> 
+      <img class="v" id="vi73" src="./images/vi.svg"> 
+      <img class="v" id="vi74" src="./images/vi.svg"> 
+      <img class="v" id="vi76" src="./images/vi.svg"> 
+      <img class="v" id="vi77" src="./images/vi.svg"> 
+      <img class="v" id="vi78" src="./images/vi.svg"> 
+      <img class="v" id="vi80" src="./images/vi.svg"> 
+      <img class="v" id="vi81" src="./images/vi.svg"> 
+      <img class="v" id="vi82" src="./images/vi.svg"> 
+      <img class="v" id="vi84" src="./images/vi.svg"> 
+      <img class="v" id="vi85" src="./images/vi.svg"> 
+      <img class="v" id="vi88" src="./images/vi.svg"> 
+      <img class="v" id="vi89" src="./images/vi.svg"> 
+      <img class="v" id="vi90" src="./images/vi.svg"> 
+      <img class="v" id="vi91" src="./images/vi.svg"> 
+      <img class="v" id="vi92" src="./images/vi.svg">
+      <img class="v" id="vi93" src="./images/vi.svg"> 
+      <img class="v" id="vi94" src="./images/vi.svg"> 
+      <img class="v" id="vi95" src="./images/vi.svg"> 
+      <img class="v" id="vi96" src="./images/vi.svg"> 
+      <img class="v" id="vi97" src="./images/vi.svg"> 
+      <img class="v" id="vi98" src="./images/vi.svg"> 
+      <img class="v" id="vi99" src="./images/vi.svg"> 
+      <img class="v" id="vi101" src="./images/vi.svg"> 
+      <img class="v" id="vi102" src="./images/vi.svg"> 
+      <img class="v" id="vi103" src="./images/vi.svg"> 
+      <img class="v" id="vi106" src="./images/vi.svg"> 
+      <img class="v" id="vi107" src="./images/vi.svg"> 
+      <img class="v" id="vi108" src="./images/vi.svg"> 
+      <img class="v" id="vi109" src="./images/vi.svg">       
+      <img class="v" id="vi110" src="./images/vi.svg"> 
+      <img class="v" id="vi112" src="./images/vi.svg"> 
+      <img class="v" id="vi113" src="./images/vi.svg"> 
+      <img class="v" id="vi114" src="./images/vi.svg"> 
+      <img class="v" id="vi115" src="./images/vi.svg"> 
+      <img class="v" id="vi116" src="./images/vi.svg"> 
+      <img class="v" id="vi117" src="./images/vi.svg"> 
+      <img class="v" id="vi118" src="./images/vi.svg"> 
+      <img class="v" id="vi119" src="./images/vi.svg"> 
+      <img class="v" id="vi120" src="./images/vi.svg"> 
+      <img class="v" id="vi121" src="./images/vi.svg"> 
+      <img class="v" id="vi122" src="./images/vi.svg"> 
+      <img class="v" id="vi124" src="./images/vi.svg"> 
+      <img class="v" id="vi125" src="./images/vi.svg">   
+      <img class="v" id="vi126" src="./images/vi.svg"> 
+      <img class="v" id="vi127" src="./images/vi.svg"> 
+      <img class="v" id="vi128" src="./images/vi.svg"> 
+      <img class="v" id="vi129" src="./images/vi.svg"> 
+      <img class="v" id="vi130" src="./images/vi.svg"> 
+      <img class="v" id="vi131" src="./images/vi.svg"> 
+      <img class="v" id="vi132" src="./images/vi.svg"> 
+      <img class="v" id="vi133" src="./images/vi.svg"> 
+      <img class="v" id="vi134" src="./images/vi.svg"> 
+      <img class="v" id="vi135" src="./images/vi.svg"> 
+      <img class="v" id="vi136" src="./images/vi.svg"> 
+      <img class="v" id="vi137" src="./images/vi.svg"> 
+      <img class="v" id="vi138" src="./images/vi.svg"> 
+      <img class="v" id="vi139" src="./images/vi.svg"> 
+      <img class="v" id="vi140" src="./images/vi.svg"> 
+      <img class="v" id="vi141" src="./images/vi.svg"> 
+      <img class="v" id="vi142" src="./images/vi.svg"> 
+      <img class="v" id="vi143" src="./images/vi.svg"> 
+      <img class="v" id="vi144" src="./images/vi.svg"> 
+      <img class="v" id="vi145" src="./images/vi.svg"> 
+      <img class="v" id="vi146" src="./images/vi.svg"> 
+      <img class="v" id="vi148" src="./images/vi.svg"> 
+      <img class="v" id="vi149" src="./images/vi.svg"> 
+      <img class="v" id="vi150" src="./images/vi.svg"> 
+      <img class="v" id="vi151" src="./images/vi.svg"> 
+      <img class="v" id="vi152" src="./images/vi.svg">      
+      <img class="v" id="vi153" src="./images/vi.svg">    
+      <img class="v" id="vi154" src="./images/vi.svg">  
+      <img class="v" id="vi155" src="./images/vi.svg">  
+      <img class="v" id="vi156" src="./images/vi.svg">  
+      <img class="v" id="vi157" src="./images/vi.svg">  
+      <img class="v" id="vi158" src="./images/vi.svg">  
+      <img class="v" id="vi159" src="./images/vi.svg">  
+      <img class="v" id="vi160" src="./images/vi.svg">  
+      <img class="v" id="vi161" src="./images/vi.svg">  
+      <img class="v" id="vi162" src="./images/vi.svg">  
+      <img class="v" id="vi163" src="./images/vi.svg">  
+      <img class="v" id="vi164" src="./images/vi.svg">  
+      <img class="v" id="vi165" src="./images/vi.svg"> 
+      <img class="v" id="vi166" src="./images/vi.svg"> 
+      <img class="v" id="vi167" src="./images/vi.svg"> 
+      <img class="v" id="vi168" src="./images/vi.svg"> 
+      <img class="v" id="vi169" src="./images/vi.svg"> 
+      <img class="v" id="vi170" src="./images/vi.svg"> 
+      <img class="v" id="vi171" src="./images/vi.svg"> 
+      <img class="v" id="vi172" src="./images/vi.svg"> 
+      <img class="v" id="vi174" src="./images/vi.svg"> 
+      <img class="v" id="vi176" src="./images/vi.svg"> 
+      <img class="v" id="vi177" src="./images/vi.svg"> 
+      <img class="v" id="vi178" src="./images/vi.svg"> 
+      <img class="v" id="vi179" src="./images/vi.svg"> 
+      <img class="v" id="vi180" src="./images/vi.svg"> 
+      <img class="v" id="vi182" src="./images/vi.svg"> 
+      <img class="v" id="vi183" src="./images/vi.svg"> 
+      <img class="v" id="vi184" src="./images/vi.svg"> 
+      <img class="v" id="vi185" src="./images/vi.svg"> 
+      <img class="v" id="vi187" src="./images/vi.svg"> 
+      <img class="v" id="vi188" src="./images/vi.svg"> 
+      <img class="v" id="vi189" src="./images/vi.svg"> 
+      <img class="v" id="vi190" src="./images/vi.svg"> 
+      <img class="v" id="vi191" src="./images/vi.svg"> 
+      <img class="v" id="vi192" src="./images/vi.svg"> 
+      <img class="v" id="vi194" src="./images/vi.svg"> 
+      <img class="v" id="vi195" src="./images/vi.svg"> 
+      <img class="v" id="vi196" src="./images/vi.svg"> 
+      <img class="v" id="vi198" src="./images/vi.svg"> 
+      <img class="v" id="vi199" src="./images/vi.svg"> 
+      <img class="v" id="vi200" src="./images/vi.svg"> 
+      <img class="v" id="vi200" src="./images/vi.svg"> 
+      <img class="v" id="vi201" src="./images/vi.svg"> 
+      <img class="v" id="vi203" src="./images/vi.svg"> 
+      <img class="v" id="vi204" src="./images/vi.svg"> 
+      <img class="v" id="vi207" src="./images/vi.svg"> 
+      <img class="v" id="vi208" src="./images/vi.svg"> 
+      <img class="v" id="vi209" src="./images/vi.svg"> 
+      <img class="v" id="vi211" src="./images/vi.svg"> 
+      <img class="v" id="vi212" src="./images/vi.svg"> 
+      <img class="v" id="vi213" src="./images/vi.svg"> 
+      <img class="v" id="vi215" src="./images/vi.svg"> 
+      <img class="v" id="vi216" src="./images/vi.svg"> 
+      <img class="v" id="vi218" src="./images/vi.svg"> 
+      <img class="v" id="vi219" src="./images/vi.svg"> 
+      <img class="v" id="vi220" src="./images/vi.svg"> 
+      <img class="v" id="vi222" src="./images/vi.svg"> 
+      <img class="v" id="vi223" src="./images/vi.svg"> 
+      <img class="v" id="vi224" src="./images/vi.svg"> 
+      <img class="v" id="vi225" src="./images/vi.svg"> 
+      <img class="v" id="vi227" src="./images/vi.svg"> 
+      <img class="v" id="vi228" src="./images/vi.svg"> 
+      <img class="v" id="vi229" src="./images/vi.svg"> 
+      <img class="v" id="vi231" src="./images/vi.svg"> 
+      <img class="v" id="vi233" src="./images/vi.svg"> 
+      <img class="v" id="vi234" src="./images/vi.svg"> 
+      <img class="v" id="vi235" src="./images/vi.svg"> 
+      <img class="v" id="vi236" src="./images/vi.svg"> 
+      <img class="v" id="vi237" src="./images/vi.svg"> 
+      <img class="v" id="vi238" src="./images/vi.svg"> 
+      <img class="v" id="vi239" src="./images/vi.svg"> 
+      <img class="v" id="vi240" src="./images/vi.svg"> 
+      <img class="v" id="vi241" src="./images/vi.svg"> 
+      <img class="v" id="vi242" src="./images/vi.svg"> 
+      <img class="v" id="vi243" src="./images/vi.svg"> 
+      <img class="v" id="vi244" src="./images/vi.svg"> 
+      <img class="v" id="vi245" src="./images/vi.svg"> 
+      <img class="v" id="vi246" src="./images/vi.svg"> 
+      <img class="v" id="vi247" src="./images/vi.svg"> 
+      <img class="v" id="vi248" src="./images/vi.svg"> 
+      <img class="v" id="vi249" src="./images/vi.svg"> 
+      <img class="v" id="vi250" src="./images/vi.svg"> 
+      <img class="v" id="vi251" src="./images/vi.svg"> 
+      <img class="v" id="vi252" src="./images/vi.svg"> 
+      <img class="v" id="vi253" src="./images/vi.svg"> 
+      <img class="v" id="vi254" src="./images/vi.svg"> 
+      <img class="v" id="vi255" src="./images/vi.svg"> 
+      <img class="v" id="vi256" src="./images/vi.svg"> 
+      <img class="v" id="vi257" src="./images/vi.svg"> 
+      <img class="v" id="vi258" src="./images/vi.svg"> 
+      <img class="v" id="vi259" src="./images/vi.svg"> 
+      <img class="v" id="vi260" src="./images/vi.svg"> 
+      <img class="v" id="vi261" src="./images/vi.svg"> 
+      <img class="v" id="vi262" src="./images/vi.svg"> 
+      <img class="v" id="vi263" src="./images/vi.svg"> 
+      <img class="v" id="vi264" src="./images/vi.svg"> 
+      <img class="v" id="vi265" src="./images/vi.svg"> 
+      <img class="v" id="vi266" src="./images/vi.svg"> 
+      <img class="v" id="vi267" src="./images/vi.svg"> 
+      <img class="v" id="vi268" src="./images/vi.svg"> 
+      <img class="v" id="vi269" src="./images/vi.svg"> 
+      <img class="v" id="vi270" src="./images/vi.svg"> 
+      <img class="v" id="vi271" src="./images/vi.svg"> 
+      <img class="v" id="vi272" src="./images/vi.svg">
+
+      <img class="parts" id="pr1" src="./images/vi.svg">
+      <img class="parts" id="pr2" src="./images/vi.svg">
+      <img class="parts" id="pr3" src="./images/partt.svg">
+      <img class="parts" id="pr4" src="./images/parttt.svg">
+      <img class="parts" id="pr5" src="./images/vi.svg">
+      <img class="parts" id="pr6" src="./images/partttt.svg">
+      <img class="parts" id="pr7" src="./images/par.svg">
+      <img class="parts" id="pr8" src="./images/pa.svg">
+      <img class="parts" id="pr9" src="./images/ppa.svg"> 
+
+
+  </div>
+  </section> 
+
+  <div class="rectanglee"></div>
+
+<div class="rrr">
+  <div class="runText">
+    <p class="run"> Designed by Viola Iosifova ~ 2024 </p> &thinsp; &thinsp;
+    <p class="run"> Designed by Viola Iosifova ~ 2024 </p> &thinsp; &thinsp;
+    <p class="run"> Designed by Viola Iosifova ~ 2024 </p> &thinsp; &thinsp;
+    <p class="run"> Designed by Viola Iosifova ~ 2024 </p> &thinsp; &thinsp;
+    <p class="run"> Designed by Viola Iosifova ~ 2024 </p> &thinsp; &thinsp;
+  </div>
+</div>
+
+  <script>
+    $( function() {
+      $( ".letter" ).draggable();
+    } );
+
+    $( function() {
+      $( ".hi" ).draggable();
+    } );
+
+    $( function() {
+      $( ".wow" ).draggable();
+    } );
+
+    $( function() {
+      $( ".left" ).draggable();
+    } );
+
+    $( function() {
+      $( ".parts" ).draggable();
+    } );
+
+  </script>
+    <script src="./javascripts/java-script.js" charset="utf-8"></script>
+    <script src="./javascripts/jquery-3.7.1.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
+    <script>
+        var sound = new Howl({
+          src: ['music.mp3'],
+          volume: 0.5,
+          loop: true,
+        });
+    </script>
+     <script>
+      $( function() {
+        $( ".letter" ).draggable();
+      } );
+  
+      $( function() {
+        $( ".hi" ).draggable();
+      } );
+  
+      $( function() {
+        $( ".wow" ).draggable();
+      } );
+  
+      $( function() {
+        $( ".left" ).draggable();
+      } );
+  
+      $( function() {
+        $( ".parts" ).draggable();
+      } );
+  
+    </script>
+
+
+<footer>
+  <div class="lines" id="linesBlock">
+    <img class="line" id="line5" src="./images/line6.svg">
+  </div>
+
+  <div class="ending"> <h1>FRAME 88</h1> </div>
+
+  <div class="title5">
+    <p>Способ связи: <br><br>violochkin@gmail.com vpiosifova@edu.hse.ru
+    <br><br>+7(916)6483203</p>
+  </div>
+
+  <div class="title6">
+    <p>Наши социальные сети: <br><br> @Frame88 @frame_88 </p>
+  </div>
+
+  <div class="title7">
+    <p>Мероприятия <br><br>Реклама <br><br>Сотрудничество <br><br>Поддержка <br><br>Новости</p>
+  </div>
+</footer>
+
+  </body>
+</html>

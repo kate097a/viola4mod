@@ -1,0 +1,759 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  cursor: none;
+  width: 100%;
+}
+
+.button {
+  font-family: "Inter regular";
+}
+
+.element::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* ---курсор--- */
+.cursorDot {
+width: 5vw;
+height: 5vw;
+border-radius: 100%;
+transition: all 400;
+background-color: rgb(255, 255, 255);
+background-size: 100%;
+}
+
+.cursorDot {
+position: fixed;
+top: 0;
+left: 0;
+transform: translate( -50%, -50%);
+pointer-events: none;
+z-index: 198765432;
+mix-blend-mode: difference;
+}
+
+.arrow {
+  width: 30vw;
+}
+/* ---курсор--- */
+
+/* ---блок меню--- */
+.menuTip {
+  color: rgb(0, 0, 0);
+  font-size: 1.7vw;
+}
+
+.menu {
+  width: 95%;
+  display: flex;
+  margin: 2vw auto;
+  justify-content: space-around;
+}
+/* ---блок меню--- */
+
+/* ---кружки--- */
+.circ {
+  position: absolute;
+}
+
+#circ1 {
+  width: 35vw;
+  top: 4vw;
+  left: 50vw;
+  animation: moveDiagonal3 9s infinite alternate;
+}
+
+@keyframes moveDiagonal3 {
+  0% {
+    top: 4vw;
+    left: 50vw;
+  }
+  25% {
+    top: 7vw;
+    left: 60vw;
+  }
+  50% {
+    top: 5vw;
+    left: 60vw;
+  }
+  75% {
+    top: 8vw;
+    left: 55vw;
+  }
+  100% {
+    top: 4vw;
+    left: 50vw;
+  }
+}
+
+/* ---кружки--- */
+
+/* ---магазин--- */
+.runText {
+  display: flex;
+  margin-top: 22.5vw;
+  margin-left: 5vw;
+  font-size: 6vw;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  letter-spacing: 3vw;
+}
+/* ---магазин--- */
+
+/* ---глиф--- */
+.glif {
+  width: 100vw;
+  position: absolute;
+}
+
+#glif1 {
+  width: 6vw;
+  top: 17vw;
+  left: 12vw;
+  position: absolute;
+  mix-blend-mode: difference;
+  opacity: 0;
+  margin-top: 8vw;
+  animation: flicker 1.2s infinite, shake 0.1s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px)
+  }
+} 
+
+#glif2 {
+  width: 30vw;
+  top: 36.3vw;
+  left: 50vw;
+  position: absolute;
+  mix-blend-mode: difference;
+  animation: flicker2 1.8s infinite, shake2 0.1s infinite;
+}
+
+@keyframes flicker2 {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake2 {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px)
+  }
+} 
+/* ---глиф--- */
+
+/* ---линии--- */
+.line {
+  width: 100%;
+}
+
+#line1 {
+  top: 13vw;
+  position: absolute;
+  animation: moveUpAndDown 1s infinite ease-in-out; 
+}
+
+@keyframes moveUpAndDown {
+  0% { top: 12vw; }
+  50% { top: 17vw; }
+  100% { top: 12vw; }
+}
+
+#line2 {
+  top: 33vw;
+  position: absolute;
+} 
+
+#line3 {
+  top: 40vw;
+  position: absolute;
+  animation: moveUpAndDown4 2s infinite ease-in-out; 
+} 
+
+@keyframes moveUpAndDown4 {
+  0% { top: 40vw; }
+  50% { top: 43vw; }
+  100% { top: 40vw; }
+}
+
+#line4 {
+  top: 48vw;
+  position: absolute;
+} 
+
+/* ---линии--- */
+
+/* ---мерч строка--- */
+.title {
+  width: 95%;
+  display: flex;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin: 5vw  auto 0 ;
+  font-size: 3vw;
+  letter-spacing: 2vw;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:  25vw;
+  margin-left: 6vw;
+}
+
+#arrr {
+  width: 55%;
+  margin-left: 24vw;
+}
+/* ---мерч строка--- */
+
+/* ---мерч--- */
+#glifCapl {
+  width: 11.3vw;
+  top: 103vw;
+  left: 55vw;
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  animation: flicker2 1.8s infinite, shake2 0.1s infinite;
+}
+
+#glifCap {
+  width: 44vw;
+  top: 158vw;
+  left: 51vw;
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  animation: flickerr 1s infinite, shakee 0.1s infinite;
+}
+
+@keyframes flickerr {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes shakee {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px)
+  }
+} 
+
+#glifCP {
+  width: 4vw;
+  top: 170vw;
+  left: 20vw;
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  animation: flicker2 1.8s infinite, shake2 0.1s infinite;
+}
+
+.strt {
+  margin-bottom: 5vw;
+}
+
+.merch {
+  width: 100vw;
+}
+
+.signa {
+  width: 43vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4vw;
+  align-items: center;
+}
+
+.mer {
+  width: 100%;
+} 
+
+.mer1 {
+  width: 100%;
+  height: 29vw;
+  background-image: url("../img/post1.svg");
+  background-size: 100% ;
+  animation: swich 5s infinite ease-in-out;
+} 
+
+
+@keyframes swich {
+  0% {background-image: url("../img/post1.svg")}
+  30% {background-image: url("../img/post2.svg")}
+  60% {background-image: url("../img/post3.svg")}
+  100% {background-image: url("../img/post1.svg")}
+}
+
+.mer2 {
+  width: 100%;
+  height: 28.6vw;
+  background-image: url("../img/merch3.svg");
+  background-size: 100% ;
+  animation: swich2 5s infinite ease-in-out;
+} 
+
+ @keyframes swich2 {
+  0% {background-image: url("../img/merch3.svg")}
+  50% {background-image: url("../img/merch33.svg")}
+  100% {background-image: url("../img/merch3.svg")}
+} 
+
+
+.mer3 {
+  width: 100%;
+  height: 28.6vw;
+  background-image: url("../img/merch2.svg");
+  background-size: 100% ;
+  animation: swich3 5s infinite ease-in-out;
+} 
+
+@keyframes swich3 {
+  0% {background-image: url("../img/merch2.svg")}
+  50% {background-image: url("../img/merch22.svg")}
+  100% {background-image: url("../img/merch2.svg")}
+}
+
+
+.color {
+  font-size: 1.4vw;
+  font-weight: 300;
+  font-family: "Inter Regular";
+}
+
+.price {
+  font-size: 2.3vw;
+  font-family: "Inter Regular";
+  font-weight: 500;
+}
+
+.products {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.itemsText {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vw;
+} 
+
+.nameItem {
+  font-size: 1.7vw;
+  font-weight: 500;
+  font-family: "Inter Regular";
+  margin-bottom: 0.6vw;
+}
+
+.itemNameContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+/* ---мерч--- */
+
+/* ---оформление заказа--- */
+.tit {
+  width: 55%;
+  display: flex;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-left: 6vw;
+  margin-top: 2vw;
+  font-size: 3vw;
+  letter-spacing: 1vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#ar2 {
+  width: 96%;
+  margin-left: 10vw;
+}
+/* ---оформление заказа--- */
+
+/* ---заказать--- */
+.runTextzn {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  margin-top: 3vw;
+  font-size: 7vw;
+  font-family: inter ExtraBold;
+  color: rgb(0, 0, 0);
+  letter-spacing: 3vw;
+}
+
+.runnnn {
+  white-space: nowrap;
+  width: fit-content;
+  animation: run44 4s infinite linear;
+}
+
+.runText4:hover {
+  animation-play-state: paused;
+}
+      
+@keyframes run44 {
+      0% {
+          transform: translateX(-0vw);
+      }
+      
+      100% {
+          transform: translateX(-114.7vw);
+      }
+    }
+/* ---заказать--- */
+
+/* ---строчки--- */
+.lili{
+  top: -5vw;
+  position: relative;
+}
+
+#bigLine1 {
+  width: 100%;
+}
+
+.text {
+  width: 100vw;
+  overflow: hidden;
+  margin-top: 3vw;
+}
+
+.text2 {
+  display: flex;
+  top: -1vw;
+  font-size: 4.5vw;
+  font-family: inter regular;
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+  animation: run4 5s infinite linear;
+  letter-spacing: 7vw;
+  z-index: 999;
+  position: relative;
+}
+  
+.text2:hover {
+  animation-play-state: paused;
+}
+      
+@keyframes run4 {
+      0% {
+          transform: translateX(-100vw);
+      }
+      
+      100% {
+          transform: translateX(0vw);
+      }
+    }
+
+.text3 {
+  display: flex;
+  margin-top: -10vw;
+  font-size: 4vw;
+  font-family: inter regular;
+  white-space: nowrap;
+  color: #000000;
+  animation: run5 8s infinite linear;
+  letter-spacing: 7vw;
+}
+      
+.text3:hover {
+  animation-play-state: paused;
+}
+          
+@keyframes run5 {
+0% {
+     transform: translateX(0vw);
+   }
+          
+100% {
+     transform: translateX(-100vw);
+  }
+}
+/* ---строчки--- */
+
+/* ---покупатель--- */
+.container { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 100%; 
+  max-width: 85vw; 
+  margin: 0 auto; 
+  padding: 5vw; 
+} 
+
+.titleA { 
+  margin-top: 1vw; 
+  font-size: 2.8vw; 
+  margin-bottom: 3vw; 
+  font-family: Inter Regular; 
+  letter-spacing: 1vw;
+  margin-right: 9vw;
+} 
+
+.form-group { 
+  display: flex; 
+  align-items: center; 
+  margin-right: 9vw;
+  margin-bottom: 2vw; 
+} 
+
+.label { 
+  font-size: 1.7vw; 
+  text-align: right; 
+  margin-right: 6vw; 
+  width: 30vw; 
+  font-family: Inter Regular; 
+} 
+
+.input { 
+  width: 100%; 
+  padding: 1vw; 
+  border: 1px solid #ccc; 
+  border-radius: 1vw; 
+  font-size: 1vw; 
+}
+/* ---покупатель--- */
+
+/* ---адрес доставки--- */
+#glifPole {
+  width: 25vw;
+  top: 288vw;
+  left: 50vw;
+  position: absolute;
+  mix-blend-mode: difference; 
+  animation: flicker2 1.8s infinite, shake2 0.1s infinite;
+}
+
+#circ5 {
+  width: 35vw;
+  top: 284vw;
+  left: 70vw;
+  animation: moveDiagonal00 9s infinite alternate;
+}
+
+@keyframes moveDiagonal00 {
+  0% {
+    top: 284vw;
+    left: 70vw;
+  }
+  25% {
+    top: 240vw;
+    left: 60vw;
+  }
+  50% {
+    top: 250vw;
+    left: 55vw;
+  }
+  75% {
+    top: 270vw;
+    left: 60vw;
+  }
+  100% {
+    top: 284vw;
+    left: 70vw;
+  }
+}
+
+#circ6 {
+  width: 35vw;
+  top: 240vw;
+  left: 1vw;
+  animation: moveDiagonal0 9s infinite alternate;
+}
+
+@keyframes moveDiagonal0 {
+  0% {
+    top: 240vw;
+    left: 1vw;
+  }
+  25% {
+    top: 260vw;
+    left: -5vw;
+  }
+  50% {
+    top: 270vw;
+    left: 4vw;
+  }
+  75% {
+    top: 250vw;
+    left: 1vw;
+  }
+  100% {
+    top: 240vw;
+    left: 3vw;
+  }
+}
+
+
+.container2 { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 100%; 
+  max-width: 85vw; 
+  margin: 0 auto; 
+  padding: -1vw; 
+} 
+
+.titleB { 
+  margin-top: 1vw; 
+  font-size: 2.8vw; 
+  margin-bottom: 3vw; 
+  font-family: Inter Regular; 
+  letter-spacing: 1vw;
+  margin-right: 1vw;
+} 
+
+.form-group { 
+  display: flex; 
+  align-items: center; 
+  margin-right: 9vw;
+  margin-bottom: 2vw; 
+} 
+
+.label { 
+  font-size: 1.7vw; 
+  text-align: right; 
+  margin-right: 6vw; 
+  width: 30vw; 
+  font-family: Inter Regular; 
+} 
+
+.input { 
+  width: 100%; 
+  padding: 1vw; 
+  border: 1px solid #ccc; 
+  border-radius: 1vw; 
+  font-size: 1vw; 
+}
+/* ---адрес доставки--- */
+
+/* ---кнопка оформить заказ--- */
+.container2 {
+  text-align: center;
+}
+
+.order-button {
+  background-color: black;
+  color: white;
+  padding: 1vw 2vw; 
+  border: none;
+  border-radius: 2vw;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 2vw; 
+  font-family: Inter Regular;
+  font-size: 1.1vw; 
+  margin-right: 0vw;
+}
+
+.order-button:hover {
+  background-color: #333;
+  font-family: Inter Regular;
+}
+/* ---кнопка оформить заказ--- */
+
+/* ---хутер--- */
+.lineW { 
+  width: 100%; 
+  height: 100%; 
+  margin-top: 4vw; 
+}
+
+.ending {
+  margin-left: 5vw;
+  margin-bottom: 4vw;
+  writing-mode: vertical-rl; 
+  font-family: inter regular;
+  transform: rotate(180deg); 
+  font-size: 2vw; 
+  letter-spacing: 1vw;
+  color: #e3a3ff; 
+}
+
+.title5 {
+  width: 20%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: -17vw;
+  margin-left: 13vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.5vw;
+}
+
+.title6 {
+  width: 8%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: -8vw;
+  margin-left: 52vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.5vw;
+}
+
+.title7 {
+  width: 10%;
+  font-family: inter regular;
+  color: rgb(0, 0, 0);
+  margin-top: -10vw;
+  margin-left: 78vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.5vw;
+}  
+/* ---хутер--- */

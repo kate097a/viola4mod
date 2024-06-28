@@ -1,0 +1,13 @@
+@import "reset.css";
+@import "content.css";
+@import "adaptive.css";
+
+@font-face {
+    font-family:Inter ExtraBold;
+    src: url('../fonts/Inter-ExtraBold.otf');
+}
+
+@font-face {
+    font-family:Inter  Regular;
+    src: url('../fonts/Inter-Regular.otf');
+}

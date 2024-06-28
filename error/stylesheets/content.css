@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    cursor: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.button {
+  font-family: "Inter regular";
+}
+
+.element::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* ---курсор--- */
+.cursorDot {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 100%;
+  transition: all 400;
+  background-color: rgb(255, 255, 255);
+  background-size: 100%;
+}
+
+.cursorDot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate( -50%, -50%);
+  pointer-events: none;
+  z-index: 198765432;
+  mix-blend-mode: difference;
+}
+
+.arrow {
+    width: 30vw;
+}
+
+.lines {
+  margin-top: -20vw;
+  position: relative;
+}
+
+.line {
+  width: 100%;
+  position: absolute;
+}
+
+#line1 {
+  top: 13vw;
+  position: absolute;
+  animation: moveUpAndDown 1s infinite ease-in-out; 
+}
+
+@keyframes moveUpAndDown {
+  0% { top: -9vw; }
+  50% { top: -4vw; }
+  100% { top: -9vw; }
+}
+
+
+
+#line2 {
+  top: 28vw;
+  position: absolute;
+}
+
+#line3 {
+  top: 4vw;
+  position: absolute;
+  animation: moveUpAndDown2 1s infinite ease-in-out; 
+} 
+
+@keyframes moveUpAndDown2 {
+  0% { top: 25vw; }
+  50% { top: 30vw; }
+  100% { top: 25vw; }
+}
+
+#line4 {
+  top: -5vw;
+  position: absolute;
+} 
+
+.caps5 {
+  width: 8vw;
+  top: 15vw;
+  left: 45vw;
+  position: absolute;
+  opacity: 10;
+  animation: shake 1s infinite, shake 0.1s infinite;
+} 
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px)
+  }
+}
+
+
+#ar1 {
+  width: 55%;
+  margin-left: 24vw;
+  transform: rotate(180deg);
+}
+
+.container {
+  width: 50vw;
+  margin: 12vw auto 1vw auto;
+}
+
+h1 {
+  font-size: 10vw;
+  font-family: inter;
+  text-align: center;
+  letter-spacing: 2vw;
+  margin: auto;
+}
+
+.text {
+  font-family: inter;
+  text-align: center;
+  font-size: 1.5vw;
+  width: 100%;
+  letter-spacing: 0.5vw;
+  margin-bottom: 3vw;
+}
+
+.cont {
+  display: flex;
+  width: 50%;
+  margin: 1vw auto;
+  justify-content: space-between;
+}
+
+.back {
+  width: 14vw;
+  height: 2.5vw;
+  font-size: 1vw;
+  color: #ffffff;
+  font-family: inter;
+  background-color: #EAB9FF;
+  border-radius: 10vw;
+  transition: all 0.3s;
+}
+
+.back:hover {
+  background-color: rgb(223, 109, 210)
+}
+
+.ar {
+  width: 40%;
+}

@@ -1,0 +1,1103 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    background-color: black;
+    cursor: none;
+    width: 100%;
+}
+
+.button {
+  font-family: "Inter regular";
+}
+
+/* ---курсор--- */
+.cursorDot {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 100%;
+  transition: all 400;
+  background-color: rgb(255, 255, 255);
+  background-size: 100%;
+}
+
+.cursorDot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate( -50%, -50%);
+  pointer-events: none;
+  z-index: 198765432;
+  mix-blend-mode: difference;
+}
+
+.arrow {
+    width: 30vw;
+}
+
+/* ---курсор--- */
+/* ---блок меню--- */
+
+.menuTip {
+    color: aliceblue;
+    font-size: 1.7vw;
+}
+
+.menu {
+    width: 95%;
+    display: flex;
+    margin: 2vw auto;
+    justify-content: space-around;
+}
+
+/* ---блок меню--- */
+/* ---бегущая строка1--- */
+
+.rrr {
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+}
+    
+.runText {
+  display: flex;
+  margin-top: 4vw;
+  font-size: 8vw;
+  font-family: inter regular;
+  white-space: nowrap;
+  color: aliceblue;
+  animation: run 3s infinite linear;
+  letter-spacing: 2vw;
+}
+
+.runText:hover {
+  animation-play-state: paused;
+}
+    
+@keyframes run {
+    0% {
+        transform: translateX(0vw);
+    }
+    
+    100% {
+        transform: translateX(-100vw);
+    }
+  }
+
+/* ---бегущая строка1--- */
+/* ---бегущая строка2--- */
+
+.rrr2 {
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+}
+
+  .runText2 {
+    display: flex;
+    margin-top: 22vw;
+    font-size: 5vw;
+    font-family: inter regular;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    animation: run2 2s infinite linear;
+    letter-spacing: 2.5vw;
+  }
+  
+  .runText2:hover {
+    animation-play-state: paused;
+  }
+      
+  @keyframes run2 {
+      0% {
+          transform: translateX(0vw);
+      }
+      
+      100% {
+          transform: translateX(-100vw);
+      }
+    }
+
+/* ---бегущая строка2--- */
+/* ---кружки--- */
+
+.circ {
+  width: 30vw;
+  position: absolute;
+}
+
+#circ1 {
+  width: 40vw;
+  top: -9vw;
+  left: 3vw;
+  position: absolute;
+  animation: moveDiagonal1 5s infinite alternate;
+}
+
+@keyframes moveDiagonal1 {
+  0% {
+    top: -9vw;
+    left: 3vw;
+  }
+  25% {
+    top: 1vw;
+    left: 8vw;
+  }
+  50% {
+    top: 5vw;
+    left: 20vw;
+  }
+  75% {
+    top: 9vw;
+    left: 4vw;
+  }
+  100% {
+    top: 15vw;
+    left: 8vw;
+  }
+}
+
+#circ2 {
+  width: 35vw;
+  top: 5vw;
+  left: 60vw;
+  animation: moveDiagonal3 9s infinite alternate;
+}
+
+@keyframes moveDiagonal3 {
+  0% {
+    top: 5vw;
+    left: 40vw;
+  }
+  25% {
+    top: 1vw;
+    left: 50vw;
+  }
+  50% {
+    top: -4vw;
+    left: 50vw;
+  }
+  75% {
+    top: 9vw;
+    left: 4vw;
+  }
+  100% {
+    top: 15vw;
+    left: 8vw;
+  }
+}
+
+#circ3 {
+  width: 35vw;
+  top: 82vw;
+  left: 34vw;
+}
+
+#circ4 {
+  width: 35vw;
+  top: 120vw;
+  left: -14vw;
+  animation: moveDiagonal7 10s infinite alternate; 
+}
+
+@keyframes moveDiagonal7 {
+  0% {
+    top: 120vw;
+    left: -14vw;
+  }
+  25% {
+    top: 140vw;
+    left: 70vw;
+  }
+  50% {
+    top: 130vw;
+    left: 40vw;
+  }
+  75% {
+    top: 120vw;
+    left: 20vw;
+  }
+  100% {
+    top: 100vw;
+    left: -14vw;
+  }
+} 
+
+#circ5 {
+  width: 35vw;
+  top: 160vw;
+  left: 14vw;
+  animation: moveDiagonal8 8s infinite alternate; 
+}
+
+@keyframes moveDiagonal8 {
+  0% {
+    top: 160vw;
+    left: 14vw;
+  }
+  25% {
+    top: 170vw;
+    left: 8vw;
+  }
+  50% {
+    top: 150vw;
+    left: 12vw;
+  }
+  75% {
+    top: 160vw;
+    left: 9vw;
+  }
+  100% {
+    top: 150vw;
+    left: 13vw;
+  }
+} 
+
+#circ6 {
+  width: 35vw;
+  top: 40vw;
+  left: 34vw;
+}
+
+/* ---кружки--- */
+/* ---линии--- */
+
+.line {
+  width: 100%;
+  height: 100%;
+  margin-top: 8vw;
+}
+
+#line2 {
+  margin-top: 8vw;
+  animation: moveUpDown 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#line3 {
+  margin-top: -16vw;
+  animation: moveUpDown1 2s ease-in-out infinite alternate;
+}
+
+@keyframes moveUpDown1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#line4 {
+  margin-top: 5vw;
+}
+
+#line5 {
+  margin-top: 3vw;
+}
+
+#line6 {
+  margin-top: 1vw;
+}
+
+/* ---линии--- */
+/* ---оглавление--- */
+
+.title {
+  width: 60%;
+  display: block;
+  font-family: inter regular;
+  color: rgb(255, 255, 255);
+  margin-top: 14vw;
+  margin-left: 4vw;
+  font-size: 3vw;
+  letter-spacing: 1vw;
+}
+
+#ar1 {
+  margin-top: -4vw;
+  left: 70vw;
+  position: absolute;
+}
+
+/* ---оглавление--- */
+/* ---капсула/глифы--- */
+
+.katya {
+  position: relative;
+  margin-bottom: 50vw;
+}
+
+.caps {
+  width: 100vw;
+  margin-top: 4vw;
+  position: absolute;
+}
+
+.caps1 {
+  width: 40vw;
+  top: 20vw;
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  opacity: 0;
+  animation: flicker 0.5s infinite, shake 0.1s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px)
+  }
+}
+
+.caps2 {
+  width: 80vw;
+  top: -51vw;
+  left: 35vw;
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  opacity: 0;
+  animation: flicker 1s infinite, shake 0.1s infinite;
+}
+
+.caps4 {
+  width: 30vw;
+  top: 67vw;
+  left: 10vw;
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  opacity: 10;
+  animation: flicker 1s infinite, shake 0.1s infinite;
+}
+
+.caps5 {
+  width: 50vw;
+  top: 100vw;
+  left: 40vw;
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  opacity: 10;
+  animation: flicker 1s infinite, shake 0.1s infinite;
+}
+
+.caps6 {
+  width: 20vw;
+  top: 55vw;
+  left: 30vw;
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  opacity: 10;
+  animation: flicker 1s infinite, shake 0.1s infinite;
+}
+
+/* ---капсула/глифы--- */
+/* ---текст--- */
+
+.title2 {
+  width: 50%;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: 10vw;
+  margin-left: 7vw;
+  font-size: 1.4vw;
+  letter-spacing: 1vw;
+}
+
+.title3 {
+  width: 50%;
+  display: block;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: 15vw;
+  margin-left: 45vw;
+  font-size: 1.4vw;
+  letter-spacing: 1vw;
+  text-align: right;
+}
+
+#ar2 {
+  margin-top: -7vw;
+  left: -1vw;
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+.title4 {
+  width: 80%;
+  display: block;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: 15vw;
+  margin-left: 7vw;
+  font-size: 1.4vw;
+  letter-spacing: 1vw;
+}
+
+.rrr3 {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.runText3 {
+  display: flex;
+  margin-top: 15vw;
+  font-size: 7vw;
+  font-family: inter regular;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+  animation: run2 2s infinite linear;
+  letter-spacing: 4vw;
+}
+  
+.runText3:hover {
+  animation-play-state: paused;
+}
+      
+@keyframes run3 {
+  0% {
+      transform: translateX(0vw);
+  }
+      
+  100% {
+      transform: translateX(-100vw);
+  }
+}
+
+.over {
+  overflow: hidden;
+  width: 100vw;
+}
+
+.runText4 {
+  display: flex;
+  margin-top: 1vw;
+  font-size: 5vw;
+  font-family: inter regular;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+  animation: run4 2s infinite linear;
+  letter-spacing: 10vw;
+}
+
+.runText4:hover {
+  animation-play-state: paused;
+}
+
+      
+@keyframes run4 {
+      0% {
+          transform: translateX(-100vw);
+      }
+      
+      100% {
+          transform: translateX(0vw);
+      }
+    }
+
+/* ---текст--- */
+/* ---плакат начало (стартовая картинка)--- */
+
+.start {
+  height: 37.9vw;
+  position: relative;
+}
+  
+.start-eye {
+  margin-top: 2vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  animation: changeImage 2s infinite;
+}
+  
+.start-eye:nth-child(1) {
+    animation-delay: 0s;
+}
+  
+.start-eye:nth-child(2) {
+    animation-delay: 0.5s;
+}
+  
+.start-eye:nth-child(3) {
+    animation-delay: 1s;
+}
+  
+@keyframes changeImage {
+   0%, 10% {
+     opacity: 1;
+  }
+   100% {
+     opacity: 0;
+  }
+}
+
+/* ---стартовая картинка--- */
+/* ---frame 88--- */
+  
+.run-text {
+  width: 100%;
+  overflow: hidden;
+}
+  
+.running {
+  font-size: 18vw;
+  font-family: inter extrabold;
+  color: white;
+  display: block;
+  letter-spacing: 1vw;
+}
+  
+.pink {
+  color: #BD7DD8;
+}
+
+/* ---frame 88--- */
+/* ---бегущие белые глазки--- */
+
+.marquee-infinite {
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.marquee-infinite img {
+  width: 80vw;
+  animation: marquee-infinite 5s linear infinite;
+  margin-left: -1px;
+}
+
+@keyframes marquee-infinite {
+  0% {
+      transform: translatex(-100%);
+  }
+
+  100% {
+      transform: translatex(0%);
+  }
+}
+
+/* ---бегущие белые глазки--- */
+/* ---большие глазки--- */
+
+.shaking-image1 {
+  width: 100%;
+  position: relative;
+}
+
+#pims1 {
+  width: 12vw;
+  top: -16vw;
+  left: -1vw;
+  position: relative;
+  animation: rotateImage 1s linear infinite;
+}
+
+#pims1:hover {
+  animation: pulseImage 1s linear infinite;
+}
+
+@keyframes pulseImage {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.3);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes rotateImage {
+  from {
+      transform: rotate(0deg); 
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+#pims2 {
+  width: 12vw;
+  top: -32vw;
+  left: 21vw;
+  position: relative;
+  animation: rotateImagee 1s linear infinite;
+}
+
+#pims2:hover {
+  animation: pulseImage 1s linear infinite;
+}
+
+@keyframes rotateImagee {
+  from {
+      transform: rotate(0deg); 
+  }
+  to {
+      transform: rotate(-360deg);
+  }
+}
+
+.shaking-image {
+  position: fixed;
+}
+
+.element::-webkit-scrollbar {
+  width: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#pims3 {
+  width: 12.5vw;
+  top: -16vw;
+  margin-left: 10vw;
+  position: fixed;
+  animation: rotateImagee 1s linear infinite;
+}
+
+#pims3:hover {
+  animation: pulseImage 1s linear infinite;
+}
+
+@keyframes rotateImagee {
+  from {
+      transform: rotate(0deg); 
+  }
+  to {
+      transform: rotate(-360deg);
+  }
+}
+
+#krug1 {
+  width: 4.5vw;
+  top: -36vw;
+  left: 5vw;
+  position: relative;
+  animation: moveRight 1s ease infinite alternate; 
+}
+
+@keyframes moveRight {
+  0% {
+      transform: translateX(0); 
+  }
+  50% {
+      transform: translateX(2vw); 
+  }
+  100% {
+      transform: translateX(0); 
+  }
+}
+
+#krug2 {
+  width: 4.5vw;
+  top: -37vw;
+  left: 17vw;
+  position: relative;
+  animation: moveRight 1.6s ease infinite alternate; 
+}
+
+#krug3 {
+  width: 4.5vw;
+  top: -36.2vw;
+  left: 29vw;
+  position: relative;
+}
+
+#krug4 {
+  width: 4.5vw;
+  top: -37vw;
+  left: 57vw;
+  position: relative;
+  animation: moveRight 1.6s ease infinite alternate; 
+}
+
+/* ---большие глазки--- */
+/* ---блок карточек--- */
+
+.imgWomen {
+  width: 100%;
+  height: 100%;
+  background-size: 27vw 27vw;
+  background-image: url("../img/girl1.svg");
+}
+
+.photo-container {
+  margin-top: 1vw;
+  width: 27vw;
+  height: 27vw;
+  border-radius: 15%;
+  background-color: #fff;
+  border-radius: 15%;
+}
+
+.photo-container:hover .imgWomen{
+  background-image: url("../img/girl2.svg");
+}
+
+.photo-container:hover {
+  background-color: #BD7DD8; 
+  border-radius: 15%;
+}
+
+.imagesRow {
+  margin-top: -13vw;
+  display: flex;
+  width: 95vw;
+  height: 30vw;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgEyes {
+  height: 100%;
+}
+
+.notPink:hover {
+  background-color: #fff;
+}
+
+#ss1 {
+  width: 10vw;
+  top: -25vw;
+  left: 2.3vw;
+  position: relative;
+  animation: rotateImage 1s linear infinite;
+}
+
+@keyframes rotateImage {
+  from {
+      transform: rotate(0deg); 
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+#ss2 {
+  width: 9vw;
+  top: -25vw;
+  left: 4.3vw;
+  position: relative;
+  animation: rotateImage2 2s linear infinite;
+}
+
+@keyframes rotateImage2 {
+  from {
+      transform: rotate(0deg); 
+  }
+  to {
+      transform: rotate(-360deg);
+  }
+}
+
+#ss3 {
+  width: 10vw;
+  top: -22.5vw;
+  left: 15vw;
+  position: relative;
+  animation: rotateImage2 1.5s linear infinite;
+}
+
+#ss4 {
+  width: 9.5vw;
+  top: -22.8vw;
+  left: -8vw;
+  position: relative;
+  animation: rotateImage 1s linear infinite;
+}
+
+.three {
+  width: 100%;
+  height: 100%;
+  border-radius: 4vw;
+  background-size: 30vw 30vw;
+  background-position: -1.5vw -2vw;
+  background-image: url("../img/er.svg");
+}
+
+.photo-container:hover .three {
+  background-image: url("../img/err.svg");
+}
+
+/* ---блок карточек--- */
+/* ---бегущий текст--- */
+
+.run-text2 {
+  overflow: hidden;
+  display: flex;
+}
+
+.running2 {
+  margin-top: 1vw;
+  font-size: 4vw;
+  font-family: inter regular;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2vw;
+  animation: runtext1 3s infinite linear; 
+}
+
+/* ---бегущий текст--- */
+/* ---блок картинок 2--- */
+
+.container {
+  display: flex;
+  width: 97vw;   
+  margin-left: auto;
+}
+
+.many-eye:hover {
+  opacity: 20%; 
+}
+
+#manyeyes1 {
+  margin-top: 5vw;
+  width: 27vw;
+}
+
+#manyeyes2 {
+  margin-top: 4vw;
+  width: 27vw;
+  transform: rotate(180deg);
+}
+
+#glaza2 {
+  margin-top: 1vw;
+  width: 55vw;
+  left: 0.6vw;
+  position: relative;
+  animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+  50% {
+      opacity: 0.2;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* ---блок картинок 2--- */
+/* ---большой глаз--- */
+
+.end {
+  width: 45%;
+}
+
+.end-voln {
+  margin-top: 3vw;
+  width: 40vw;
+  margin-left: -1.2vw;
+}
+
+#eyye1 {
+  width: 9vw;
+  top: -43vw;
+  position: relative;
+  animation: moveRightLeft 2s linear infinite alternate;
+}
+
+@keyframes moveRightLeft {
+  0% {
+      left: 13vw; 
+  }
+  50% {
+      left: 17vw; 
+  }
+  100% {
+      left: 13vw; 
+  }
+}
+
+#eyye2 {
+  width: 5vw;
+  top: -19vw;
+  left: 13vw;
+  position: relative;
+  animation: blinkImage 1s infinite alternate;
+}
+
+@keyframes blinkImage {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+#eyye3 {
+  width: 5vw;
+  top: -25vw;
+  left: 1vw;
+  position: relative;
+  animation: blinkImage 1.5s infinite alternate;
+}
+
+#eyye4 {
+  width: 5vw;
+  top: -28vw;
+  left: 2vw;
+  position: relative;
+  animation: blinkImage 1.3s infinite alternate;
+}
+
+#eyye5 {
+  width: 5vw;
+  top: -37vw;
+  left: -6vw;
+  position: relative;
+  animation: blinkImage 1.7s infinite alternate;
+}
+
+/* ---большой глаз--- */
+/* ---бегущие розовые глазки--- */
+
+.eepnk {
+  margin-top: -15vw;
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.eepnk img {
+  width: 80vw;
+  animation: marquee-infinite 5s linear infinite;
+}
+
+@keyframes eepnk {
+  0% {
+      transform: translatex(-100%);
+  }
+
+  100% {
+      transform: translatex(0%);
+  }
+}
+
+/* ---бегущие розовые глазки--- */
+/* ---конец плаката--- */
+
+.textContainer {
+  display: flex;
+}
+
+.run-text5 {
+  margin: 2vw 1;
+}
+  
+.running3 {
+  font-size: 3vw;
+  border: none;
+  margin-top: 2vw;
+  font-family: inter regular;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1vw;
+  animation: runtext3 3s infinite linear; 
+}
+
+.running3:hover{
+  animation-play-state: paused;
+}
+
+@keyframes runtext3 {
+  0% {
+      transform: translatex(0vw);
+  }
+
+  100% {
+      transform: translatex(-100vw);
+  }
+}
+
+/* ---конец плаката--- */
+
+/* ---хутер--- */
+.ending {
+  margin-left: 5vw;
+  margin-bottom: 4vw;
+  writing-mode: vertical-rl; 
+  font-family: inter regular;
+  transform: rotate(180deg); 
+  font-size: 2vw; 
+  letter-spacing: 1vw;
+  color: #BD7DD8; 
+}
+
+.title5 {
+  width: 20%;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: -17vw;
+  margin-left: 13vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.5vw;
+}
+
+.title6 {
+  width: 8%;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: -8vw;
+  margin-left: 52vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.5vw;
+}
+
+.title7 {
+  width: 10%;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: -10vw;
+  margin-left: 78vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.5vw;
+}
+/* ---хутер--- */
+
+.run-text {
+  width: 100%;
+  overflow: hidden;
+}

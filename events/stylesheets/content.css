@@ -1,0 +1,703 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  cursor: none;
+  width: 100%;
+}
+
+.button {
+  font-family: "Inter regular";
+}
+
+.element::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* ---курсор--- */
+.cursorDot {
+width: 4vw;
+height: 4vw;
+border-radius: 100%;
+transition: all 400;
+background-color: rgb(255, 255, 255);
+background-size: 100%;
+}
+
+.cursorDot {
+position: fixed;
+top: 0;
+left: 0;
+transform: translate( -50%, -50%);
+pointer-events: none;
+z-index: 198765432;
+mix-blend-mode: difference;
+}
+
+.arrow {
+  width: 30vw;
+}
+/* ---курсор--- */
+
+/* ---блок меню--- */
+.menuTip {
+  color: rgb(255, 255, 255);
+  font-size: 1.7vw;
+}
+
+.menu {
+  width: 95%;
+  display: flex;
+  margin: 2vw auto;
+  justify-content: space-around;
+}
+/* ---блок меню--- */
+
+
+/* ---капсула/глифы--- */
+.katya {
+  position: relative;
+}
+
+.caps {
+  width: 70vw;
+  position: absolute;
+  z-index: 1;
+}
+
+#glif {
+  width: 33vw;
+  left: 57vw;
+  top: -4vw;
+  position: absolute;
+  mix-blend-mode: color-dodge;
+
+  animation: flicker 1s infinite, shake 0.1s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px)
+  }
+}
+
+#glif1 {
+  width: 5vw;
+  left: 25vw;
+  top: 2vw;
+  position: absolute;
+  mix-blend-mode: color-dodge;
+
+  animation: flicker 3s infinite, shake 0.1s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px)
+  }
+}
+/* ---капсула/глифы--- */
+
+/* ---кружки--- */
+.circles {
+  position: relative;
+  z-index: 1;
+}
+
+.circ {
+  width: 30vw;
+  position: absolute;
+}
+
+#circ1 {
+  width: 40vw;
+  top: -9vw;
+  left: 3vw;
+  position: absolute;
+  animation: moveDiagonal1 5s infinite alternate;
+}
+
+@keyframes moveDiagonal1 {
+  0% {
+    top: -9vw;
+    left: 3vw;
+  }
+  25% {
+    top: -2vw;
+    left: 8vw;
+  }
+  50% {
+    top: 5vw;
+    left: 20vw;
+  }
+  75% {
+    top: 9vw;
+    left: 4vw;
+  }
+  100% {
+    top: 15vw;
+    left: 8vw;
+  }
+}
+
+#circ2 {
+  width: 35vw;
+  top: 5vw;
+  left: 60vw;
+  animation: moveDiagonal3 9s infinite alternate;
+}
+
+@keyframes moveDiagonal3 {
+  0% {
+    top: 5vw;
+    left: 60vw;
+  }
+  25% {
+    top: 1vw;
+    left: 70vw;
+  }
+  50% {
+    top: -4vw;
+    left: 70vw;
+  }
+  75% {
+    top: 9vw;
+    left: 55vw;
+  }
+  100% {
+    top: 15vw;
+    left: 60vw;
+  }
+}
+
+#circ3 {
+  width: 35vw;
+  top: -20vw;
+  left: 50vw;
+}
+/* ---кружки--- */
+
+/* ---мерориятия--- */
+.runText {
+  display: flex;
+  margin-top: 22.5vw;
+  margin-left: 5vw;
+  font-size: 6vw;
+  font-family: inter regular;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3vw;
+}
+
+#arr {
+  width: 45%;
+  margin-left: 15vw;
+}
+/* ---мероприятия--- */
+
+/* ---линии--- */
+.line {
+  width: 100%;
+}
+
+#line1 {
+  top: 17vw;
+  position: absolute;
+  animation: moveUpAndDown 1s infinite ease-in-out; 
+}
+
+@keyframes moveUpAndDown {
+  0% { top: 17vw; }
+  50% { top: 22vw; }
+  100% { top: 17vw; }
+}
+
+#line2 {
+  top: 36vw;
+  position: absolute;
+}
+
+#line3 {
+  top: 44vw;
+  position: absolute;
+} 
+
+#line4 {
+  top: 48vw;
+  position: absolute;
+  animation: moveUpAndDown4 2s infinite ease-in-out; 
+} 
+
+@keyframes moveUpAndDown4 {
+  0% { top: 50vw; }
+  50% { top: 53vw; }
+  100% { top: 50vw; }
+}
+/* ---линии--- */
+
+/* ---Выставки--- */
+.title {
+  width: 95%;
+  display: flex;
+  font-family: inter regular;
+  color: rgb(255, 255, 255);
+  margin: 5vw  auto 0 ;
+  margin-left: 6vw;
+  margin-top: 25vw;
+  font-size: 3vw;
+  letter-spacing: 2vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#ar1 {
+  width: 55%;
+  margin-left: 12vw;
+}
+
+.title2 {
+  width: 46%;
+  font-family: inter regular;
+  color: rgb(255, 255, 255);
+  margin-top: 8vw;
+  margin-left: 6vw;
+  font-size: 1.4vw;
+  letter-spacing: 1vw;
+}
+
+
+.text {
+  width: 100vw;
+  overflow: hidden;
+  margin-top: 4vw;
+}
+
+.text3 {
+  display: flex;
+  margin-top: 4vw;
+  font-size: 4vw;
+  font-family: inter regular;
+  white-space: nowrap;
+  color: #ffffff;
+  animation: run5 8s infinite linear;
+  letter-spacing: 4vw;
+}
+      
+.text3:hover {
+  animation-play-state: paused;
+}
+          
+@keyframes run5 {
+0% {
+     transform: translateX(0vw);
+   }
+          
+100% {
+     transform: translateX(-100vw);
+  }
+}
+/* ---Выставки--- */
+
+/* ---крутилка--- */
+.posters {
+  width: 100vw;
+  height: 40vw;
+  margin-top: 10vw;
+}
+
+.postersScroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.postersScrollContainer {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  left: 0;
+  justify-content: space-around;
+  transition: all 0.2s;
+}
+
+.posterImg {
+  width: 18vw;
+  transition: all 0.2s;
+  z-index: 5;
+}
+
+.scrollBtns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  align-items: center;
+}
+
+.circleBtn {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 100%;
+  background-color: aliceblue;
+  margin-left: 2vw;
+  transition: all 0.2s;
+}
+
+.bigPoster {
+  width: 28vw;
+}
+
+.picked {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: rgb(144, 144, 144);
+  transition: all 0.3s;
+}
+
+.rr {
+  background-color: antiquewhite;
+  width: 1px;
+  height: 1px;
+}
+/* ---крутилка--- */
+
+
+/* ---часть описания первой серии--- */
+.photo {
+  width: 100vw;
+  margin-top: 2vw; 
+}
+
+.evOne {
+  width: 45%;
+  display: block;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: 4vw;
+  margin-left: 50vw;
+  font-size: 1.3vw;
+  letter-spacing: 1vw;
+  text-align: right;
+}
+
+#pol1{
+  width: 40vw;
+  left: 3vw;
+  margin-top: -13vw;
+  position: absolute;
+}
+
+.evLil {
+  width: 30%;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: 1vw;
+  margin-left: 7vw;
+  font-size: 1vw;
+  letter-spacing: 0.9vw;
+}
+/* ---часть описания первой серии--- */
+
+/* ---вторая серия--- */
+.postersScrollContainerr {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  left: 0;
+  justify-content: space-around;
+  margin-top: 55vw;
+}
+
+.posterImg1 {
+  width: 23vw;
+  transition: transform 0.2s ease; 
+}
+
+.bigPosterr {
+  width: 28vw;
+}
+
+.posterImg1:hover {
+  transform: scale(1.1); 
+}
+/* ---вторая серия--- */
+
+/* ---часть описания второй серии--- */
+.opisaniye2 {
+  margin-top: 60vw;
+}
+
+.photo2 {
+  width: 100vw;
+  margin-top: 2vw; 
+}
+
+.evOne {
+  width: 45%;
+  display: block;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: 4vw;
+  margin-left: 50vw;
+  font-size: 1.3vw;
+  letter-spacing: 1vw;
+  text-align: right;
+}
+
+#pol2{
+  width: 40vw;
+  left: 3vw;
+  margin-top: -10vw;
+  position: absolute;
+}
+
+.evLil {
+  width: 30%;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: 1vw;
+  margin-left: 7vw;
+  font-size: 1vw;
+  letter-spacing: 0.9vw;
+}
+/* ---часть описания второй серии--- */
+
+/* ---третья серия--- */
+.postersScrollContainer3 {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  left: 0;
+  justify-content: space-around;
+}
+
+.posterImg1 {
+  width: 23vw;
+  transition: transform 0.2s ease; 
+}
+
+.bigPosterr {
+  width: 28vw;
+}
+
+.posterImg1:hover {
+  transform: scale(1.1); 
+}
+/* ---третья серия--- */
+
+/* ---часть описания второй серии--- */
+.opisaniye3 {
+  margin-top: 4vw;
+}
+
+.photo2 {
+  width: 100vw;
+  margin-top: -3vw; 
+}
+
+.evOne {
+  width: 45%;
+  display: block;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: 4vw;
+  margin-left: 50vw;
+  font-size: 1.3vw;
+  letter-spacing: 1vw;
+  text-align: right;
+}
+
+#pol3{
+  width: 40vw;
+  left: 3vw;
+  margin-top: -14vw;
+  position: absolute;
+}
+
+.evLil {
+  width: 30%;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: 1vw;
+  margin-left: 7vw;
+  font-size: 1vw;
+  letter-spacing: 0.9vw;
+}
+/* ---часть описания второй серии--- */
+
+/* ---четвертая серия--- */
+.posters {
+  position: relative;
+}
+
+.postersScrollContainer4 {  
+  position: absolute;  
+  width: 100vw;  
+  display: flex;  
+  left: 0;  
+  justify-content: space-around;  
+  margin-top: -5vw;  
+  overflow: hidden; 
+}  
+  
+.posterImg1 {  
+  width: 23vw;  
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease; 
+  filter: blur(3px); 
+  z-index: 5;
+}  
+  
+.posterImg1:hover {  
+  transform: scale(1.1);   
+  box-shadow: 0 0 15px #ffffff;  
+  filter: blur(0px); 
+}
+
+.bigPosterr {
+  filter: blur(0px); 
+}
+
+/* ---четвертая серия--- */
+
+
+/* ---хутер--- */
+.ending {
+  margin-left: 5vw;
+  margin-bottom: 4vw;
+  writing-mode: vertical-rl; 
+  font-family: inter regular;
+  transform: rotate(180deg); 
+  font-size: 2vw; 
+  letter-spacing: 1vw;
+  color: #BD7DD8; 
+}
+
+.title5 {
+  width: 20%;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: -17vw;
+  margin-left: 13vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.5vw;
+}
+
+.title6 {
+  width: 8%;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: -8vw;
+  margin-left: 52vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.5vw;
+}
+
+.title7 {
+  width: 10%;
+  font-family: inter regular;
+  color: aliceblue;
+  margin-top: -10vw;
+  margin-left: 78vw;
+  font-size: 1.3vw;
+  letter-spacing: 0.5vw;
+}
+/* ---хутер--- */
+
+#circV {
+  position: absolute;
+  z-index: 1;
+  left: 23vw;
+  top: -12vw;
+  width: 55vw;
+}
+
+#circT {
+  position: absolute;
+  z-index: 1;
+  left: 20vw;
+  top: 41vw;
+  width: 55vw;
+}
+
+#circP {
+  position: absolute;
+  z-index: 1;
+  left: 1vw;
+  top: -18vw;
+  width: 80vw;
+}
+
+
+.text {
+  width: 100vw;
+  overflow: hidden;
+  margin-top: 4vw;
+}
+
+.textY {
+  display: flex;
+  margin-top: 27vw;
+  font-size: 4vw;
+  font-family: inter regular;
+  white-space: nowrap;
+  color: #ffffff;
+  animation: run5 8s infinite linear;
+  letter-spacing: 4vw;
+}
+      
+.text3:hover {
+  animation-play-state: paused;
+}
+          
+@keyframes run5 {
+0% {
+     transform: translateX(0vw);
+   }
+          
+100% {
+     transform: translateX(-100vw);
+  }
+}
